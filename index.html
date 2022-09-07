@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Hero -->
+    <header class="relative h-screen flex items-center">
+      <img class="absolute left-0 top-0 w-full h-full object-cover -z-10" src="./assets/img/home-hero.jpeg" alt="" />
+      <div class="absolute left-0 top-0 w-full h-full -z-10 bg-gradient-to-r from-black/60"></div>
+
+      <div class="container">
+        <div class="grid lg:grid-cols-2">
+          <div class="text-center">
+            <a href="./index.html">
+              <img class="w-40 md:w-64 inline-block" src="./assets/img/logo.svg" alt="company-name" />
+            </a>
+
+            <h1 class="text-4xl md:text-7xl font-bold text-white mt-4">
+              UNLOCK THE <br />
+              POSSIBILITIES
+            </h1>
+
+            <div class="rounded-md shadow-md bg-white/90 w-full px-6 py-8 mt-6">
+              <h2 class="text-3xl font-bold text-dark-200">LOANS FROM $2,000 – $36,500*</h2>
+              <ul
+                class="flex flex-col md:flex-row md:flex-wrap justify-center gap-y-2 gap-x-4 mt-4 list-disc list-inside"
+              >
+                <li class="text-lg">No impact to credit score</li>
+                <li class="text-lg">Fast decisions</li>
+                <li class="text-lg">Money next business day upon approval</li>
+              </ul>
+
+              <form class="flex flex-col xl:flex-row gap-3 mt-6">
+                <div class="relative rounded-md shadow-sm w-full">
+                  <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                    <!-- Heroicon name: mini/envelope -->
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="w-6 h-6 text-gray-400"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                  <input type="text" class="input" placeholder="Loan Amount" />
+                </div>
+
+                <select class="select">
+                  <option>Loan Purpose</option>
+                  <option>Unexpected Urgent Expense</option>
+                  <option>Debt Consolidation / Pay Off Credit Cards</option>
+                  <option>Medical / Dental</option>
+                  <option>Home Improvement</option>
+                  <option>Travel</option>
+                  <option>Taxes</option>
+                  <option>Wedding</option>
+                  <option>Personal Financial Reasons</option>
+                </select>
+
+                <button type="button" class="btn w-full uppercase">Check your rate</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Hero end -->
+  </body>
+</html>

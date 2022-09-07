@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-dark-100;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex justify-center items-center rounded border border-transparent bg-secondary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary-200 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 h-12;
+  }
+
+  .select {
+    @apply block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-secondary focus:outline-none focus:ring-secondary sm:text-sm h-12;
+  }
+
+  .input {
+    @apply block w-full rounded-md border-gray-300 pl-10 focus:border-secondary focus:ring-secondary sm:text-sm h-12;
+  }
+}
