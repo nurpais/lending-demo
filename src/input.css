@@ -8,8 +8,16 @@
   body {
     @apply text-dark-100;
   }
+
+  .preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+  }
 }
 
+/* Buttons, Forms */
 @layer components {
   .btn {
     @apply inline-flex justify-center items-center rounded border border-transparent bg-secondary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary-200 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 h-12;
@@ -21,5 +29,108 @@
 
   .input {
     @apply block w-full rounded-md border-gray-300 pl-10 focus:border-secondary focus:ring-secondary sm:text-sm h-12;
+  }
+}
+
+/* Mobile navbar */
+@layer components {
+  .navbar-active {
+    overflow: hidden !important;
+  }
+
+  .navbar-mobile {
+    @apply sticky top-0 bg-dark-200 text-white flex items-center justify-between h-14 z-10 lg:hidden;
+    font-size: 15px;
+  }
+
+  .navbar-mobile-content {
+    @apply absolute top-14 left-0 w-full max-w-xs bg-dark-200 h-[calc(100vh-56px)] overflow-auto py-10;
+    @apply -translate-x-full will-change-auto transition-transform duration-300 ease-out flex flex-col;
+    @apply shadow-xl;
+  }
+
+  .navbar-active .navbar-mobile-content {
+    @apply translate-x-0;
+  }
+
+  .navbar-mobile-dropdown {
+    @apply relative flex w-full items-center px-5 py-2;
+  }
+
+  .navbar-mobile-chevron {
+    @apply absolute right-5 top-1/2 -translate-y-1/2;
+  }
+
+  .navbar-mobile-dropdown.active + .navbar-mobile-sub {
+    @apply block;
+  }
+
+  .navbar-mobile-dropdown.active .navbar-mobile-chevron {
+    @apply rotate-180;
+  }
+
+  .navbar-mobile-sub {
+    @apply hidden bg-dark-300 py-3;
+  }
+
+  .navbar-mobile-link {
+    @apply py-3 block pl-12 hover:text-primary;
+  }
+
+  .navbar-mobile-burger {
+    @apply w-14 h-14 bg-white/10 inline-flex items-center justify-center;
+  }
+}
+
+/* Desktop navbar */
+@layer components {
+  .navbar {
+    @apply hidden lg:flex items-center bg-dark-200 text-white px-10 h-[70px] sticky top-0 z-20;
+  }
+
+  .navbar-logo img {
+    @apply w-32;
+  }
+
+  .navbar-nav {
+    @apply flex relative  self-stretch items-center ml-6;
+  }
+
+  .navbar-dropdown {
+    @apply flex items-center p-3 relative transition-colors;
+  }
+
+  .navbar-dropdown.active {
+    @apply text-primary;
+  }
+
+  .navbar-dropdown.active::after {
+    @apply bg-white;
+  }
+
+  .navbar-dropdown::after {
+    content: '';
+    @apply absolute left-0 w-full -bottom-3 h-14 rounded-tl rounded-tr transition-colors duration-300 -z-10;
+  }
+
+  .navbar-dropdown.active .navbar-chevron {
+    @apply rotate-180;
+  }
+
+  .navbar-dropdown.active + .navbar-sub {
+    @apply opacity-100 visible;
+  }
+
+  .navbar-chevron {
+    @apply text-xs ml-2;
+  }
+
+  .navbar-sub {
+    @apply opacity-0 invisible transition-all duration-300 absolute left-0 top-full w-56;
+    @apply bg-white text-black rounded-bl rounded-br shadow-md overflow-hidden py-1;
+  }
+
+  .navbar-link {
+    @apply flex items-center hover:bg-primary-300 transition-colors py-0.5;
   }
 }

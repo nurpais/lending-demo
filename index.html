@@ -5,11 +5,225 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/icon-font.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body class="preload">
+    <!-- Mobile navbar start -->
+    <div class="navbar-mobile">
+      <a href="#" class="inline-flex items-center justify-center w-14 h-14">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </a>
+      <a href="./index.html" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="company-name" />
+      </a>
+
+      <button type="button" class="navbar-mobile-burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <nav class="navbar-mobile-content">
+        <ul class="space-y-3 flex-1">
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-PersonalLoans inline-block text-xl mr-2" aria-hidden="true"></span> Loans
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-Mortgage inline-block text-xl mr-2" aria-hidden="true"></span> Mortgages
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-CreditCards inline-block text-xl mr-2" aria-hidden="true"></span> Credit Cards
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="h-px bg-white/20 my-10">&nbsp;</div>
+
+        <div class="px-5">
+          <p>Get your free credit score in minutes!</p>
+
+          <div class="mt-5 flex space-x-4">
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Login</a>
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Sing Up for Free</a>
+          </div>
+
+          <div class="mt-10 flex space-x-2 items-center">
+            <span class="icon-MobilePhone text-xl" aria-hidden="true"></span>
+            <p>Call Us <a href="tel:+18008134620" rel="nofollow" class="text-secondary">1-800-813-4620</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile navbar end -->
+
+    <!-- Desktop navbar start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="" />
+      </a>
+
+      <ul class="navbar-nav">
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Loans
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Mortgages
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Credit Cards
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="flex space-x-4 ml-auto">
+        <a class="hover:text-secondary-200 transition-colors" href="#">Sign up for Free</a>
+        <a class="hover:text-secondary-200 transition-colors" href="#">Log in</a>
+        <a class="hover:text-secondary-200 transition-colors" href="tel:+18008134620">1-800-813-4620</a>
+      </div>
+    </div>
+    <!-- Desktop navbar end -->
+
     <!-- Hero -->
-    <header class="relative h-screen flex items-center">
+    <header class="relative py-20 flex items-center">
       <img class="absolute left-0 top-0 w-full h-full object-cover -z-10" src="./assets/img/home-hero.jpeg" alt="" />
       <div class="absolute left-0 top-0 w-full h-full -z-10 bg-gradient-to-r from-black/60"></div>
 
@@ -77,5 +291,15 @@
       </div>
     </header>
     <!-- Hero end -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://kit.fontawesome.com/b8e42dbd46.js" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
