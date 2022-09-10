@@ -19,6 +19,8 @@ function navbar() {
     window.addEventListener('click', (e) => {
       if (!e.target.closest('.navbar-mobile')) document.documentElement.classList.remove('navbar-active');
     });
+
+    window.addEventListener('resize', () => document.documentElement.classList.remove('navbar-active'));
   }
   if (document.querySelector('.navbar')) {
     const dropdowns = document.querySelectorAll('.navbar-dropdown');

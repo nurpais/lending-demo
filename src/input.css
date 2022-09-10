@@ -15,6 +15,10 @@
     -ms-transition: none !important;
     -o-transition: none !important;
   }
+
+  a {
+    @apply transition-colors duration-200;
+  }
 }
 
 /* Buttons, Forms */
@@ -44,7 +48,7 @@
   }
 
   .navbar-mobile-content {
-    @apply absolute top-14 left-0 w-full max-w-xs bg-dark-200 h-[calc(100vh-56px)] overflow-auto py-10;
+    @apply absolute top-14 left-0 w-full max-w-xs bg-dark-200 h-[calc(100vh-56px)] overflow-auto py-6;
     @apply -translate-x-full will-change-auto transition-transform duration-300 ease-out flex flex-col;
     @apply shadow-xl;
   }
@@ -132,5 +136,20 @@
 
   .navbar-link {
     @apply flex items-center hover:bg-primary-300 transition-colors py-0.5;
+  }
+}
+
+/* Footer */
+@layer components {
+  .footer {
+    @apply bg-dark-200 py-8 lg:py-10 text-sm;
+  }
+
+  .footer-social {
+    @apply inline-flex gap-4;
+  }
+
+  .footer-social-link {
+    @apply inline-block w-10 h-10 rounded-full border border-gray-200 p-2.5;
   }
 }
