@@ -8,11 +8,13 @@ module.exports = {
           DEFAULT: '#08c177',
           200: '#00b29f',
           300: '#d4eee7',
+          400: '#ecfbf5',
         },
 
         secondary: {
           DEFAULT: '#00aeef',
           200: '#0089bc',
+          300: '#e0f0f4',
         },
         dark: {
           100: '#454545',

@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply text-dark-100;
+    @apply text-dark-100 antialiased;
   }
 
   .preload * {
@@ -24,15 +24,19 @@
 /* Buttons, Forms */
 @layer components {
   .btn {
-    @apply inline-flex justify-center items-center rounded border border-transparent bg-secondary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-secondary-200 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 h-12;
+    @apply inline-flex justify-center items-center rounded border border-transparent bg-secondary px-3 py-1 lg:px-6 lg:py-3 text-base text-white shadow-sm hover:bg-secondary-200 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 h-9 lg:h-12 font-bold;
+  }
+
+  .btn.btn-outline {
+    @apply bg-transparent text-secondary border-2 border-secondary hover:bg-secondary-200 hover:text-white hover:border-secondary-200;
   }
 
   .select {
-    @apply block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-secondary focus:outline-none focus:ring-secondary sm:text-sm h-12;
+    @apply block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-secondary focus:outline-none focus:ring-secondary sm:text-sm h-9 lg:h-12;
   }
 
   .input {
-    @apply block w-full rounded-md border-gray-300 pl-10 focus:border-secondary focus:ring-secondary sm:text-sm h-12;
+    @apply block w-full rounded-md border-gray-300 pl-10 focus:border-secondary focus:ring-secondary sm:text-sm h-9 lg:h-12;
   }
 }
 
@@ -151,5 +155,112 @@
 
   .footer-social-link {
     @apply inline-block w-10 h-10 rounded-full border border-gray-200 p-2.5;
+  }
+}
+
+/* Mobile accordion */
+@layer components {
+  .acc-mobile {
+    @apply shadow-sm bg-white rounded overflow-hidden text-sm;
+  }
+
+  .acc-mobile-dropdown {
+    @apply flex items-center relative w-full p-3;
+  }
+
+  .acc-mobile-icon-wrapper {
+    @apply w-10 h-10 inline-flex items-center justify-center bg-primary-400 rounded-full;
+  }
+
+  .acc-mobile-chevron {
+    @apply inline-flex items-center justify-center w-6 h-6 rounded-full absolute right-3;
+  }
+
+  .acc-mobile-content {
+    @apply overflow-hidden transition-all duration-300 px-5 h-0;
+  }
+
+  /* Active state */
+  .acc-mobile.active .acc-mobile-chevron {
+    @apply rotate-180;
+  }
+}
+
+/* Desktop tabs */
+@layer components {
+  .tabs-wrapper {
+    @apply relative h-[100px] shadow rounded-md;
+    transform: translateZ(0);
+  }
+  .tabs {
+    @apply bg-white absolute left-0 top-0 w-full h-full flex rounded-md;
+    @apply transition-all duration-200 -translate-x-20  opacity-0;
+  }
+
+  .tabs:nth-child(2) {
+    @apply translate-x-20;
+  }
+
+  .tabs.active {
+    @apply opacity-100 translate-x-0 z-10;
+  }
+
+  .tab {
+    @apply h-full flex-1 hover:bg-primary hover:text-white transition-all relative;
+    @apply px-2 text-sm flex flex-col items-center justify-center;
+  }
+
+  .tab-control {
+    @apply bg-white hover:bg-white;
+  }
+
+  #next-tab {
+    @apply border-l border-gray-200;
+  }
+
+  #prev-tab {
+    @apply border-r border-gray-200;
+  }
+
+  .tab-icon {
+    @apply inline-flex items-center justify-center w-12 h-12 bg-primary-400 rounded-full text-primary transition-all;
+  }
+
+  .tab:hover .tab-icon,
+  .tab.active .tab-icon {
+    @apply bg-primary text-white;
+  }
+
+  .tab.active {
+    @apply bg-primary text-white;
+  }
+
+  .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 53%;
+    margin-left: -10px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent transparent #08c177;
+    transform: rotate(180deg);
+  }
+
+  .tabs > *:first-child {
+    @apply rounded-tl-md rounded-bl-md;
+  }
+
+  .tabs > *:last-child {
+    @apply rounded-tr-md rounded-br-md;
+  }
+
+  .tabs-content {
+    @apply pt-14 px-6;
+  }
+
+  .tab-content {
+    /* @apply hidden; */
+    @apply grid grid-cols-2 gap-16;
   }
 }

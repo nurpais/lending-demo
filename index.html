@@ -297,6 +297,402 @@
         <h2 class="text-dark-200 text-2xl lg:text-[40px] text-center">
           We show your options, you score the <span class="text-primary">win</span>.
         </h2>
+
+        <!-- Mobile accordion -->
+        <div class="mt-6 space-y-1 lg:hidden">
+          <div class="acc-mobile">
+            <button class="acc-mobile-dropdown">
+              <span class="acc-mobile-icon-wrapper">
+                <span class="icon-Cash text-2xl text-primary" aria-hidden="true"></span>
+              </span>
+              <span class="ml-3 font-bold">Personal Loans</span>
+
+              <span class="acc-mobile-chevron">
+                <span class="icon-ChevronDown text-xs text-secondary font-bold"></span>
+              </span>
+            </button>
+            <div class="acc-mobile-content">
+              <p class="text-2xl text-dark-200">Find the right personal loan rate for you</p>
+              <p class="mt-2">
+                Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                compare personal loan offers in minutes.
+              </p>
+
+              <a href="#" class="btn w-full mt-6">Compare Rates</a>
+            </div>
+          </div>
+          <div class="acc-mobile">
+            <button class="acc-mobile-dropdown">
+              <span class="acc-mobile-icon-wrapper">
+                <span class="icon-Mortgage text-2xl text-primary" aria-hidden="true"></span>
+              </span>
+              <span class="ml-3 font-bold">Home Purchase</span>
+
+              <span class="acc-mobile-chevron">
+                <span class="icon-ChevronDown text-xs text-secondary font-bold"></span>
+              </span>
+            </button>
+            <div class="acc-mobile-content">
+              <p class="text-2xl text-dark-200">Find the right personal loan rate for you</p>
+              <p class="mt-2">
+                Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                compare personal loan offers in minutes.
+              </p>
+
+              <a href="#" class="btn w-full mt-6">Compare Rates</a>
+            </div>
+          </div>
+          <div class="acc-mobile">
+            <button class="acc-mobile-dropdown">
+              <span class="acc-mobile-icon-wrapper">
+                <span class="icon-CreditCards text-2xl text-primary" aria-hidden="true"></span>
+              </span>
+              <span class="ml-3 font-bold">Credit Cards</span>
+
+              <span class="acc-mobile-chevron">
+                <span class="icon-ChevronDown text-xs text-secondary font-bold"></span>
+              </span>
+            </button>
+            <div class="acc-mobile-content">
+              <p class="text-2xl text-dark-200">Find the right personal loan rate for you</p>
+              <p class="mt-2">
+                Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                compare personal loan offers in minutes.
+              </p>
+
+              <a href="#" class="btn w-full mt-6">Compare Rates</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop tabs -->
+        <div class="mt-8 hidden lg:block">
+          <div class="tabs-wrapper">
+            <!-- First tabs -->
+            <div class="tabs active">
+              <button data-tab="1" class="tab active">
+                <span class="tab-icon">
+                  <span class="icon-Cash text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Personal Loans</span>
+              </button>
+              <button data-tab="2" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Mortgage text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Home Purchases</span>
+              </button>
+              <button data-tab="3" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Refinance text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Home Refinance</span>
+              </button>
+              <button data-tab="4" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-CreditCards text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Credit Cards</span>
+              </button>
+              <button data-tab="5" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Insurance text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Insurance</span>
+              </button>
+              <button data-tab="6" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-BusinessLoans text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Business Loans</span>
+              </button>
+              <button data-tab="7" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-CreditScore text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Free Credit Score</span>
+              </button>
+              <button id="next-tab" class="tab tab-control">
+                <span class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-300">
+                  <span class="icon-ChevronDown -rotate-90 text-xl font-bold text-secondary"></span>
+                </span>
+                <span class="text-secondary font-bold"> More Loan Options</span>
+              </button>
+            </div>
+
+            <!-- Second tabs -->
+            <div class="tabs">
+              <button id="prev-tab" class="tab tab-control">
+                <span class="w-12 h-12 flex items-center justify-center rounded-full bg-secondary-300">
+                  <span class="icon-ChevronDown rotate-90 text-xl font-bold text-secondary"></span>
+                </span>
+                <span class="text-secondary font-bold"> Previous Loans</span>
+              </button>
+              <button data-tab="8" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-HomeEquity text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Home Equity</span>
+              </button>
+              <button data-tab="9" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-ReverseMortgage text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Reverse Mortgage</span>
+              </button>
+              <button data-tab="10" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Debt text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Debt Relief</span>
+              </button>
+              <button data-tab="11" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-CreditRepair text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Credit Repair</span>
+              </button>
+              <button data-tab="12" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Autos text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Auto Loans</span>
+              </button>
+              <button data-tab="13" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Bank text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Banking Products</span>
+              </button>
+              <button data-tab="14" class="tab">
+                <span class="tab-icon">
+                  <span class="icon-Student text-3xl"></span>
+                </span>
+                <span class="mt-1.5 font-bold">Student Loans</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="tabs-content">
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Personal Loans</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Find the right personal loan rate for you</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Home Purchase</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Compare top mortgage lenders</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Home Refinance</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Compare mortgage refinance offers</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Credit Cards</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Shop and compare credit cards</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Insurance</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Find the best insurance rates for you</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Business Loans</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Shop and compare business loans</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Free Credit Score</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Check your credit score for free</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Home Equity</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Put your home’s equity to use</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Reverse Mortgage</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Get a reverse mortgage and start your retirement</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Debt Relief</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Compare debt relief options</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Credit Repair</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Give your credit a boost</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Auto Loans</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Discover the right auto loan for you</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Banking Products</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Find the right place for your money</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6">
+                  <a class="btn" href="#">Compare Rates</a>
+                </div>
+              </div>
+              <img src="./assets/img/molly-personal.jpeg" alt="" />
+            </div>
+            <div class="tab-content">
+              <div>
+                <p class="text-sm font-bold text-gray-400">Student Loans</p>
+                <h4 class="text-3xl text-dark-200 font-bold mb-1">Compare student loan options</h4>
+                <p class="mt-2.5">
+                  Need to consolidate debt or make a large purchase? We bring the lenders to you so you can shop and
+                  compare personal loan offers in minutes.
+                </p>
+
+                <div class="mt-6 flex gap-8">
+                  <a class="btn" href="#">Compare Rates</a>
+                  <a class="btn btn-outline" href="#">Learn More</a>
+                </div>
+              </div>
+              <img src="./assets/img/Molly-Mortgage-Disc.jpeg" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
