@@ -292,8 +292,9 @@
     </header>
     <!-- Hero end -->
 
-    <main class="py-5 lg:py-14 bg-gray-100">
-      <div class="container">
+    <main class="bg-gray-100">
+      <!-- Header tabs start -->
+      <div class="container py-5 lg:pt-14 lg:pb-0">
         <h2 class="text-dark-200 text-2xl lg:text-[40px] text-center">
           We show your options, you score the <span class="text-primary">win</span>.
         </h2>
@@ -694,6 +695,25 @@
           </div>
         </div>
       </div>
+      <!-- Header tabs end -->
+
+      <!-- Watch video start -->
+      <div class="bg-white">
+        <div class="container">
+          <div class="flex justify-center items-center gap-5">
+            <img src="./assets/img/molly-banner.jpeg" alt="" />
+
+            <div>
+              <p class="text-sm md:text-lg font-bold mb-1">See how the lendas came to Linda</p>
+              <button class="text-secondary text-sm uppercase font-bold flex items-center" data-modal="#video-modal">
+                <i class="icon-PlayButton"></i> <span class="ml-1">Watch Video</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Watch video start end -->
     </main>
 
     <footer class="footer">
@@ -836,6 +856,22 @@
         </div>
       </div>
     </footer>
+
+    <div id="video-modal" class="modal">
+      <div class="modal-content">
+        <button class="modal-close-btn" data-modal-close="#video-modal">&times;</button>
+        <iframe
+          class="w-full h-full"
+          loading="lazy"
+          title="YouTube video player"
+          src="https://www.youtube.com/embed/5fynhCnnm8E?rel=0"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          allowscriptaccess="always"
+        ></iframe>
+      </div>
+    </div>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"

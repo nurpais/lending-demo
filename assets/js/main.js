@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', () => {
   navbar();
   accordion();
   tabs();
+  videoModal();
   document.querySelector('body').classList.remove('preload');
 });
 
@@ -106,5 +107,40 @@ function tabs() {
     }
 
     switchTabContent();
+  }
+}
+
+function videoModal() {
+  if (document.querySelector('[data-modal]')) {
+    const modals = document.querySelectorAll('.modal');
+    const triggers = document.querySelectorAll('[data-modal]');
+    const closeBtns = document.querySelectorAll('[data-modal-close]');
+
+    // Open the target modal
+    triggers.forEach((btn) =>
+      btn.addEventListener('click', (e) => {
+        const triggerModal = e.currentTarget.getAttribute('data-modal');
+        gsap.to(triggerModal, { autoAlpha: 1, opacity: 1, duration: 0.3 });
+      })
+    );
+
+    // Close when click the close button
+    closeBtns.forEach((btn) =>
+      btn.addEventListener('click', (e) => {
+        const closeModal = e.currentTarget.getAttribute('data-modal-close');
+        gsap.to(closeModal, { autoAlpha: 0, opacity: 0, duration: 0.3 });
+        document.querySelectorAll('iframe').forEach((v) => (v.src = v.src));
+      })
+    );
+
+    // Close when click outside
+    modals.forEach((modal) =>
+      modal.addEventListener('click', (e) => {
+        if (!e.target.closest('.modal-content')) {
+          gsap.to(e.currentTarget, { autoAlpha: 0, opacity: 0, duration: 0.3 });
+          document.querySelectorAll('iframe').forEach((v) => (v.src = v.src));
+        }
+      })
+    );
   }
 }

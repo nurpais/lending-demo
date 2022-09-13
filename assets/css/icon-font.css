@@ -154,3 +154,7 @@
 .icon-Bank::before {
   content: '';
 }
+
+.icon-PlayButton:before {
+  content: '';
+}

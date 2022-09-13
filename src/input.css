@@ -264,3 +264,18 @@
     @apply grid grid-cols-2 gap-16;
   }
 }
+
+/* Modal */
+@layer components {
+  .modal {
+    @apply bg-black/20 flex items-center justify-center fixed left-0 top-0 w-full h-screen z-50 invisible opacity-0 p-4;
+  }
+
+  .modal-content {
+    @apply relative w-full aspect-video max-w-xl;
+  }
+
+  .modal-close-btn {
+    @apply absolute -top-4 -right-4 w-8 h-8 rounded-full bg-white text-dark-200 text-xl inline-flex items-center justify-center;
+  }
+}
