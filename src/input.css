@@ -21,6 +21,24 @@
   }
 }
 
+/* Typography */
+@layer base {
+  .heading-primary {
+    @apply text-dark-200 font-bold text-2xl lg:text-[40px];
+  }
+
+  .heading-secondary {
+    @apply text-dark-200 font-bold text-2xl md:text-3xl;
+  }
+}
+
+/* Section layout */
+@layer base {
+  .section {
+    @apply py-8 lg:py-14;
+  }
+}
+
 /* Buttons, Forms */
 @layer components {
   .btn {
@@ -277,5 +295,40 @@
 
   .modal-close-btn {
     @apply absolute -top-4 -right-4 w-8 h-8 rounded-full bg-white text-dark-200 text-xl inline-flex items-center justify-center;
+  }
+}
+
+/* List ordered */
+@layer components {
+  .list-ordered {
+    @apply space-y-12;
+  }
+
+  .list-ordered-item {
+    @apply flex flex-col md:flex-row items-center gap-4 text-center md:text-left md:items-start;
+  }
+
+  .list-ordered-num {
+    @apply w-8 h-8 border-2 border-primary bg-primary-300 rounded-full inline-flex items-center justify-center text-primary flex-shrink-0 font-bold;
+  }
+}
+
+/* Rate card */
+@layer components {
+  .rate-card {
+    @apply bg-white rounded shadow-md inline-block p-5 pl-10 min-w-[200px] relative min-h-[166px];
+    box-shadow: 0 2px 7px 0 rgb(0 0 0 / 13%);
+  }
+
+  .rate-card-heading {
+    @apply text-sm font-bold md:text-[17px] mb-0.5 text-dark-200;
+  }
+
+  .rate-card-percent {
+    @apply font-bold text-[35px] text-dark-200;
+  }
+
+  .rate-card-line {
+    @apply absolute w-1 h-9 rounded bg-neutral-500 left-5 top-[17];
   }
 }
