@@ -638,8 +638,8 @@ a{
 @media (min-width: 1024px){
 
   .section{
-    padding-top: 3.5rem;
-    padding-bottom: 3.5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 }
 
@@ -790,34 +790,28 @@ a{
   padding-right: 1rem;
   padding-left: 1rem;
 }
-@media (min-width: 640px){
+@media (min-width: 600px){
 
   .container{
-    max-width: 640px;
+    max-width: 600px;
   }
 }
-@media (min-width: 768px){
+@media (min-width: 728px){
 
   .container{
-    max-width: 768px;
+    max-width: 728px;
   }
 }
-@media (min-width: 1024px){
+@media (min-width: 984px){
 
   .container{
-    max-width: 1024px;
+    max-width: 984px;
   }
 }
-@media (min-width: 1280px){
+@media (min-width: 1200px){
 
   .container{
-    max-width: 1280px;
-  }
-}
-@media (min-width: 1536px){
-
-  .container{
-    max-width: 1536px;
+    max-width: 1200px;
   }
 }
 .btn{
@@ -1671,6 +1665,76 @@ a{
   --tw-bg-opacity: 1;
   background-color: rgb(115 115 115 / var(--tw-bg-opacity));
 }
+.cards-wrapper{
+  position: relative;
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 2rem;
+  border-radius: 0.5rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(8 193 119 / var(--tw-bg-opacity));
+  padding: 2rem;
+  padding-bottom: 0px;
+}
+@media (min-width: 1280px){
+
+  .cards-wrapper{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-bottom: 2rem;
+  }
+}
+.card{
+  display: inline-block;
+  width: 13rem;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+  text-align: center;
+    -webkit-box-shadow: 2px 22px 44px #1b9b68;
+            box-shadow: 2px 22px 44px #1b9b68;
+}
+.news-card{
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.news-card-img{
+  display: none;
+  height: 112px;
+  width: 160px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0.375rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 768px){
+
+  .news-card-img{
+    display: block;
+  }
+}
+.news-card-tag{
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgb(8 193 119 / var(--tw-text-opacity));
+}
+.news-card-heading{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(16 31 48 / var(--tw-text-opacity));
+}
 .pointer-events-none{
   pointer-events: none;
 }
@@ -1690,6 +1754,12 @@ a{
 .top-0{
   top: 0px;
 }
+.bottom-0{
+  bottom: 0px;
+}
+.right-8{
+  right: 2rem;
+}
 .-z-10{
   z-index: -10;
 }
@@ -1699,6 +1769,14 @@ a{
 .my-10{
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
+}
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+.mx-10{
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 .mr-2{
   margin-right: 0.5rem;
@@ -1739,11 +1817,14 @@ a{
 .ml-1{
   margin-left: 0.25rem;
 }
-.mt-8{
-  margin-top: 2rem;
+.mt-7{
+  margin-top: 1.75rem;
 }
-.mt-14{
-  margin-top: 3.5rem;
+.ml-2\.5{
+  margin-left: 0.625rem;
+}
+.ml-2{
+  margin-left: 0.5rem;
 }
 .inline-block{
   display: inline-block;
@@ -1824,6 +1905,12 @@ a{
 .max-w-\[37px\]{
   max-width: 37px;
 }
+.max-w-6xl{
+  max-width: 72rem;
+}
+.max-w-5xl{
+  max-width: 64rem;
+}
 .flex-1{
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0%;
@@ -1885,11 +1972,11 @@ a{
 .gap-4{
   gap: 1rem;
 }
-.gap-10{
-  gap: 2.5rem;
-}
 .gap-6{
   gap: 1.5rem;
+}
+.gap-10{
+  gap: 2.5rem;
 }
 .gap-y-2{
   row-gap: 0.5rem;
@@ -1948,6 +2035,9 @@ a{
   border-top-width: 1px;
   border-bottom-width: 1px;
 }
+.border-t{
+  border-top-width: 1px;
+}
 .border-secondary{
   --tw-border-opacity: 1;
   border-color: rgb(0 174 239 / var(--tw-border-opacity));
@@ -1982,21 +2072,38 @@ a{
   --tw-bg-opacity: 1;
   background-color: rgb(255 197 7 / var(--tw-bg-opacity));
 }
+.bg-\[\#00AEEF\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 174 239 / var(--tw-bg-opacity));
+}
 .bg-\[\#FF704D\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 112 77 / var(--tw-bg-opacity));
 }
-.bg-\[\#00AEEF\]{
+.bg-neutral-300{
   --tw-bg-opacity: 1;
-  background-color: rgb(0 174 239 / var(--tw-bg-opacity));
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity));
+}
+.bg-neutral-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 .bg-gradient-to-r{
   background-image: -webkit-gradient(linear, left top, right top, from(var(--tw-gradient-stops)));
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
+.bg-gradient-to-b{
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--tw-gradient-stops)));
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+}
 .from-black\/60{
   --tw-gradient-from: rgb(0 0 0 / 0.6);
   --tw-gradient-to: rgb(0 0 0 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.from-neutral-100{
+  --tw-gradient-from: #f5f5f5;
+  --tw-gradient-to: rgb(245 245 245 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 .object-cover{
@@ -2031,8 +2138,15 @@ a{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
 .pl-3{
   padding-left: 0.75rem;
+}
+.pb-0{
+  padding-bottom: 0px;
 }
 .text-center{
   text-align: center;
@@ -2151,6 +2265,10 @@ a{
 /* List ordered */
 
 /* Rate card */
+
+/* Card */
+
+/* News card */
 .hover\:border-\[\#FB0801\]:hover{
   --tw-border-opacity: 1;
   border-color: rgb(251 8 1 / var(--tw-border-opacity));
@@ -2191,18 +2309,36 @@ a{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.hover\:text-secondary:hover{
+  --tw-text-opacity: 1;
+  color: rgb(0 174 239 / var(--tw-text-opacity));
+}
 @media (min-width: 768px){
+
+  .md\:order-2{
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .md\:order-1{
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
 
   .md\:mt-8{
     margin-top: 2rem;
   }
 
-  .md\:mt-10{
-    margin-top: 2.5rem;
-  }
-
   .md\:block{
     display: block;
+  }
+
+  .md\:flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .md\:hidden{
@@ -2235,10 +2371,6 @@ a{
 
   .md\:gap-6{
     gap: 1.5rem;
-  }
-
-  .md\:gap-10{
-    gap: 2.5rem;
   }
 
   .md\:text-left{
@@ -2302,6 +2434,10 @@ a{
   }
 }
 @media (min-width: 1280px){
+
+  .xl\:absolute{
+    position: absolute;
+  }
 
   .xl\:col-span-2{
     grid-column: span 2 / span 2;
