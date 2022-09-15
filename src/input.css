@@ -42,7 +42,7 @@
 /* Buttons, Forms */
 @layer components {
   .btn {
-    @apply inline-flex justify-center items-center rounded border border-transparent bg-secondary px-3 py-1 lg:px-6 lg:py-3 text-base text-white shadow-sm hover:bg-secondary-200 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 h-9 lg:h-12 font-bold;
+    @apply inline-flex justify-center items-center rounded border border-transparent bg-secondary px-3 py-1 lg:px-6 lg:py-3 text-base text-white shadow-sm hover:bg-secondary-200 transition-colors focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-offset-2 h-9 lg:h-12 font-bold whitespace-nowrap;
   }
 
   .btn.btn-outline {
@@ -316,7 +316,7 @@
 /* Rate card */
 @layer components {
   .rate-card {
-    @apply bg-white rounded shadow-md inline-block p-5 pl-10 min-w-[200px] relative min-h-[166px];
+    @apply bg-white rounded shadow-md inline-block p-5 pl-10 sm:min-w-[200px] relative sm:min-h-[166px];
     box-shadow: 0 2px 7px 0 rgb(0 0 0 / 13%);
   }
 
@@ -336,12 +336,21 @@
 /* Card */
 @layer components {
   .cards-wrapper {
-    @apply p-8 pb-0 xl:pb-8 bg-primary grid xl:grid-cols-2 rounded-lg gap-8 mt-6 relative;
+    @apply p-8 pb-0 xl:pb-8 bg-primary grid xl:grid-cols-2 lg:rounded-lg gap-8 mt-6 relative max-w-[1168px] mx-auto;
   }
 
   .card {
-    @apply rounded bg-white p-5 inline-block text-center w-52;
+    @apply rounded bg-white p-5 inline-block lg:text-center transition-transform hover:scale-110 duration-200;
+    @apply flex items-center lg:flex-col gap-5;
     box-shadow: 2px 22px 44px #1b9b68;
+  }
+
+  .card-icon {
+    @apply text-primary text-5xl lg:text-3xl;
+  }
+
+  .card-link {
+    @apply mt-2 lg:mt-5 text-sm text-secondary hidden md:inline-block;
   }
 }
 
