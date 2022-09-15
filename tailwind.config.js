@@ -21,10 +21,15 @@ module.exports = {
           200: '#101f30',
           300: '#1f3043',
         },
+        danger: {
+          DEFAULT: '#ff704d',
+          200: '#ff471a',
+        },
       },
     },
     fontFamily: {
       sans: ['Lato', 'sans-serif'],
+      hand: ['Caveat', 'cursive'],
     },
     container: {
       center: true,

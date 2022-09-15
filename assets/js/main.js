@@ -3,6 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
   accordion();
   tabs();
   videoModal();
+  tooltip();
   document.querySelector('body').classList.remove('preload');
 });
 
@@ -142,5 +143,21 @@ function videoModal() {
         }
       })
     );
+  }
+}
+
+function tooltip() {
+  if (document.querySelector('.tooltip')) {
+    const tooltips = document.querySelectorAll('.tooltip');
+
+    tooltips.forEach((tooltip) => {
+      tooltip.addEventListener('mouseenter', () => {
+        tooltip.querySelector('.tooltip-text').style.display = 'block';
+      });
+
+      tooltip.addEventListener('mouseleave', () => {
+        tooltip.querySelector('.tooltip-text').style.display = 'none';
+      });
+    });
   }
 }
