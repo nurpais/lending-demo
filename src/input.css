@@ -405,10 +405,11 @@
   }
 
   .tooltip-text {
-    @apply hidden w-52 md:w-80 bg-white shadow-lg rounded-md absolute top-full left-0 text-left py-2 px-3 translate-y-3 text-xs;
+    @apply hidden w-52 md:w-80 bg-white rounded-md absolute top-full left-0 text-left py-2 px-3 translate-y-3 text-xs;
+    box-shadow: rgba(0, 0, 0, 0.6) 0 0 4px 0;
   }
 
-  .tooltip-text::after {
+  .tooltip-text::before {
     content: '';
     position: absolute;
     bottom: 100%;
@@ -417,5 +418,54 @@
     border-width: 7px;
     border-style: solid;
     border-color: transparent transparent #fff;
+    filter: drop-shadow(1px 1px 3px rgba(0, 0, 0, 0.6));
+    z-index: -1;
+  }
+
+  .tooltip-text::after {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 6px;
+    content: '';
+    background-color: inherit;
+    position: absolute;
+    z-index: -1;
+  }
+}
+
+/* Article card */
+@layer components {
+  .article {
+    @apply relative;
+  }
+
+  .article-link {
+    @apply absolute inset-0 block;
+  }
+
+  .article-info {
+    @apply py-4 md:p-4 bg-white md:-mt-16 relative md:mx-5;
+  }
+
+  .article-label {
+    @apply text-primary text-sm font-bold mb-1 hidden md:block;
+  }
+
+  .article-heading {
+    @apply text-2xl text-dark-200;
+  }
+
+  .article-author {
+    @apply items-center mt-2.5 hidden md:flex;
+  }
+
+  .article-author-img {
+    @apply w-10 h-10 rounded-full overflow-hidden object-cover;
+  }
+
+  .article-author-text {
+    @apply text-neutral-500 font-bold ml-3;
   }
 }
