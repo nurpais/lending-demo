@@ -224,7 +224,7 @@
 
     <!-- Hero start -->
     <header class="pt-8 md:pt-16 bg-dark-200">
-      <div class="container text-center overflow-hidden">
+      <div class="container text-center">
         <h1 class="heading-primary text-primary text-center">Debt Consolidation Loans</h1>
 
         <div class="text-center text-white mt-5 max-w-3xl mx-auto">
@@ -270,7 +270,7 @@
 
     <main>
       <section class="container section">
-        <h2 class="heading-secondary">Best debt consolidation loans</h2>
+        <h2 class="heading-primary">Best debt consolidation loans</h2>
 
         <div class="mt-14">
           <div class="tooltip">
@@ -282,100 +282,535 @@
             </div>
           </div>
 
-          <table class="hidden">
-            <thead>
-              <tr>
-                <th>Loan companies<span class="fooicon fooicon-sort"></span></th>
-                <th>APR range<span class="fooicon fooicon-sort"></span></th>
-                <th>Loan amount<span class="fooicon fooicon-sort"></span></th>
-                <th>Credit required<span class="fooicon fooicon-sort"></span></th>
-                <th>Origination fee<span class="fooicon fooicon-sort"></span></th>
-                <th>Repayment terms<span class="fooicon fooicon-sort"></span></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <strong>LightStream</strong>
-                </td>
-                <td>4.99% - 19.99%</td>
-                <td>$5,000 - $100,000</td>
-                <td>Not specified</td>
-                <td>No origination fee</td>
-                <td>24 to 144 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Marcus by Goldman Sachs</strong>
-                </td>
-                <td>6.99% - 24.99%</td>
-                <td>$3,500 - $40,000</td>
-                <td>Not specified</td>
-                <td>No origination fee</td>
-                <td>36 to 72 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Happy Money</strong>
-                </td>
-                <td>5.99% - 24.99%</td>
-                <td>$5,000 - $40,000</td>
-                <td>640</td>
-                <td>0.00% - 5.00%</td>
-                <td>24 and 60 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Prosper</strong>
-                </td>
-                <td>7.95% - 35.99%</td>
-                <td>$2,000 - $40,000</td>
-                <td>640</td>
-                <td>2.41% - 5.00%</td>
-                <td>36 or 60 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>SoFi</strong>
-                </td>
-                <td>7.99% - 23.43%</td>
-                <td>$5,000 - $100,000</td>
-                <td>680</td>
-                <td>No origination fee</td>
-                <td>24 to 84 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Upgrade</strong>
-                </td>
-                <td>6.95% - 35.97%</td>
-                <td>$1,000 - $50,000</td>
-                <td>620</td>
-                <td>1.85% - 8.00%</td>
-                <td>24 to 84 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Upstart</strong>
-                </td>
-                <td>4.37% - 35.99%</td>
-                <td>$1,000 - $50,000</td>
-                <td>600</td>
-                <td>0.00% - 8.00%</td>
-                <td>36 or 60 months</td>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Wells Fargo</strong>
-                </td>
-                <td>5.74% - 24.24%</td>
-                <td>$3,000 - $100,000</td>
-                <td>620</td>
-                <td>None</td>
-                <td>12 to 84 months</td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- This example requires Tailwind CSS v2.0+ -->
+          <div class="mt-8 flex flex-col">
+            <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded">
+                  <table class="min-w-full divide-y divide-primary">
+                    <thead class="bg-primary">
+                      <tr>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-bold text-white sm:pl-6">
+                          Loan companies
+                        </th>
+                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-bold text-white">APR range</th>
+                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-bold text-white">Loan amount</th>
+                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-bold text-white">Credit required</th>
+                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-bold text-white">Origination fee</th>
+                        <th scope="col" class="px-3 py-3.5 text-left text-sm font-bold text-white">Repayment terms</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>LightStream</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">4.99% - 19.99%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$5,000 - $100,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">Not specified</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">No origination fee</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">24 to 144 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>Marcus by Goldman Sachs</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">6.99% - 24.99%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$3,500 - $40,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">Not specified</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">No origination fee</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">36 to 72 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>Happy Money</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">5.99% - 24.99%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$5,000 - $40,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">640</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">0.00% - 5.00%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">24 and 60 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>Prosper</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">7.95% - 35.99%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$2,000 - $40,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">640</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">2.41% - 5.00%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">36 or 60 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>SoFi</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">7.99% - 23.43%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$5,000 - $100,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">680</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">No origination fee</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">24 to 84 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>Upgrade</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">6.95% - 35.97%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$1,000 - $50,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">620</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">1.85% - 8.00%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">24 to 84 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>Upstart</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">4.37% - 35.99%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$1,000 - $50,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">600</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">0.00% - 8.00%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">36 or 60 months</td>
+                      </tr>
+                      <tr>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                          <strong>Wells Fargo</strong>
+                        </td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">5.74% - 24.24%</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">$3,000 - $100,000</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">620</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">None</td>
+                        <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">12 to 84 months</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-sm mt-8 italic">
+            Loan terms are subject to change at any time, as is performance relative to other lenders and lending
+            platforms.
+          </p>
+
+          <div class="space-y-6">
+            <div class="mt-6 text-center">
+              <a href="#" class="btn btn-danger">Get Your Personalized Results</a>
+            </div>
+
+            <p>
+              Sifting through loan companies in search of a debt consolidation loan that offers competitive rates for
+              your credit score can be time-consuming. To assist you in your search, we scored lending companies based
+              on the categories most important to borrowers, such as APR, repayment terms and eligibility criteria. Many
+              of these lenders also let you prequalify online, meaning you can check your rates with no impact on your
+              credit score.
+            </p>
+
+            <p>
+              <img class="w-6 inline-block" src="./assets/img/icons/star.png" alt="" />
+              <strong>Best for low rates: </strong> LightStream
+            </p>
+
+            <p>
+              <img class="w-6 inline-block" src="./assets/img/icons/star.png" alt="" />
+              <strong> Best for long repayment terms: </strong> LightStream, SoFi Bank, N.A and Wells Fargo Bank
+            </p>
+
+            <p>
+              <img class="w-6 inline-block" src="./assets/img/icons/star.png" alt="" />
+              <strong>Best for high loan amounts: </strong> SoFi Bank, N.A and Wells Fargo Bank
+            </p>
+
+            <p>
+              <img class="w-6 inline-block" src="./assets/img/icons/star.png" alt="" />
+              <strong>Best for a peer-to-peer loan: </strong> Prosper
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-neutral-100">
+        <div class="container">
+          <h2 class="heading-primary text-center">What is debt consolidation?</h2>
+
+          <div class="mt-10 md:mt-12">
+            <div class="grid md:grid-cols-2 gap-8">
+              <div>
+                <p>
+                  <strong>
+                    Debt consolidation is a debt management strategy that involves rolling one or multiple debts into
+                    another form of financing.
+                  </strong>
+                  For instance, you may take out a debt consolidation loan or balance transfer credit card and use it to
+                  pay off existing debts with better terms.
+                  <br />
+                  <br />
+                  Ideally, you’ll want to consolidate your debt to a lower APR than what you’re currently paying. This
+                  can help you
+                  <strong>save money on interest, lower your monthly payments and pay off debt faster.</strong>
+                </p>
+              </div>
+
+              <div class="bg-white rounded shadow p-5">
+                <p><strong role="heading">In this guide:</strong></p>
+                <ul class="list-disc list-inside">
+                  <li>
+                    <a class="text-secondary hover:text-secondary-200" href="#debt-work">
+                      How does debt consolidation work?
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-secondary hover:text-secondary-200" href="#good-idea">
+                      When is debt consolidation a good or bad idea?
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-secondary hover:text-secondary-200" href="#how-personal-loan">
+                      How to consolidate debt with a personal loan
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-secondary hover:text-secondary-200" href="#benefits">
+                      3 major benefits of debt consolidation
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-secondary hover:text-secondary-200" href="#difference">
+                      Debt consolidation vs. debt relief: What’s the difference?
+                    </a>
+                  </li>
+                  <li>
+                    <a class="text-secondary hover:text-secondary-200" href="#faq"> Debt consolidation FAQ </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section calculator start -->
+      <section class="section container">
+        <h2 class="heading-primary">Debt Consolidation Calculator</h2>
+      </section>
+      <!-- Section calculator end -->
+
+      <section class="section bg-dark-200 text-white" id="good-idea">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="heading-primary text-white">When is debt consolidation a good or bad idea?</h2>
+
+            <div class="mt-10 md:mt-12">
+              <p class="text-lg font-bold">
+                There’s no one-size-fits-all debt management strategy. <br />
+                To determine <a href="#" class="text-secondary">if debt consolidation is the right move</a>, you’ll need
+                to take a close look at your finances.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-8">
+            <div class="grid md:grid-cols-2 gap-10">
+              <div>
+                <h4 class="text-lg font-bold">Debt consolidation is a good idea when…</h4>
+                <ul class="checklist mt-5">
+                  <li>You can qualify for a lower APR than what you’re currently paying on your debts</li>
+                  <li>You’re struggling to manage credit card bills and loan payments</li>
+                  <li>You want to pay off debt faster on a set schedule</li>
+                </ul>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-bold">Debt consolidation is a bad idea when…</h4>
+                <ul class="X-list mt-5">
+                  <li>You can’t qualify for a lower APR than what you’re currently paying on your debts</li>
+                  <li>You only have small balances that you can pay off quickly</li>
+                  <li>You owe too much to manage and repay</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="debt-work">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-8 md:space-y-12">
+            <h2 class="heading-primary">How does debt consolidation work?</h2>
+
+            <p>
+              Although there are many ways to consolidate debt, it generally works the same way:
+              <strong> You pay off one or more debts using a new debt. </strong> Some popular debt consolidation methods
+              include personal loans and balance transfer credit cards. <br /><br />
+              Depending on your unique situation — how much debt you have to consolidate, your credit score, how soon
+              you need the funds, what type of debt you have and other factors — one method may work better for you than
+              another.
+            </p>
+          </div>
+
+          <div class="space-y-6">
+            <p>
+              <i class="text-primary text-xl">→ </i>
+              <a class="text-secondary hover:text-secondary-200 text-xl" href="#"> Personal loans: </a>
+              <br />
+              Combine many types of debt into one fixed monthly payment with a debt consolidation loan.
+            </p>
+            <p>
+              <i class="text-primary text-xl">→ </i>
+              <a class="text-secondary hover:text-secondary-200 text-xl" href="#"> Balance transfer credit cards:</a
+              ><br />
+              Consolidate credit card debt onto a balance transfer credit card with a lower APR.
+            </p>
+            <p>
+              <i class="text-primary text-xl">→ </i>
+              <a class="text-secondary hover:text-secondary-200 text-xl" href="#"> Home equity loans:</a><br />
+              Tap your home’s equity to pay off debt by using your home as collateral.
+            </p>
+            <p>
+              <i class="text-primary text-xl">→ </i>
+              <a class="text-secondary hover:text-secondary-200 text-xl" href="#"> Debt management plans:</a>
+              <br />
+              Enroll in a DMP through a certified nonprofit credit counseling agency to repay your debt in three to five
+              years.
+            </p>
+          </div>
+        </div>
+
+        <!-- This example requires Tailwind CSS v2.0+ -->
+        <div class="mt-10 flex flex-col">
+          <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+            <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+              <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded">
+                <table class="min-w-full divide-y divide-dark-200">
+                  <thead class="bg-dark-200">
+                    <tr>
+                      <th scope="col" class="py-3.5 pl-4 pr-3 text-left text-sm font-bold text-white sm:pl-6"></th>
+                      <th scope="col" class="px-3 py-3.5 text-left text-lg font-bold text-white">Pros</th>
+                      <th scope="col" class="px-3 py-3.5 text-left text-lg font-bold text-white">Cons</th>
+                    </tr>
+                  </thead>
+
+                  <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                      <td class="px-3 py-4 text-sm text-dark-200">
+                        <strong>Personal loan for debt consolidation</strong>
+                      </td>
+                      <td class="px-3 py-4 text-sm text-dark-200 bg-green-50">
+                        <ul>
+                          <li>• Fixed APR and monthly payments</li>
+                          <li>• Potentially lower APR than what you’re currently paying</li>
+                        </ul>
+                      </td>
+                      <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200 bg-red-50">
+                        <ul>
+                          <li>• APRs can run high for fair and bad credit borrowers</li>
+                          <li>• Subject to fees, like loan origination fee and prepayment penalty</li>
+                          <li>• Bad credit borrowers may not qualify at all</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200">
+                        <strong>Balance transfer credit card</strong>
+                      </td>
+                      <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200 bg-green-50">
+                        <ul>
+                          <li>• Some cards have introductory 0% APR periods, which can last as long as 20 months</li>
+                          <li>• Potentially lower APR than what you’re currently paying on your credit cards</li>
+                        </ul>
+                      </td>
+                      <td class="whitespace-nowrap px-3 py-4 text-sm text-dark-200 bg-red-50">
+                        <ul>
+                          <li>• Variable APR</li>
+                          <li>• Can only be used for credit card consolidation</li>
+                          <li>• Intro offers reserved for borrowers with strong credit</li>
+                          <li>• May be subject to a balance transfer fee of 3% to 5%</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="how-personal-loan">
+        <h2 class="heading-primary text-center">How to consolidate debt with a personal loan</h2>
+
+        <ol class="mt-10 max-w-4xl mx-auto space-y-6 ordered-list">
+          <li>
+            <strong>Check your credit score. </strong>Most consolidation options will require a credit check. Unsecured
+            personal loans don’t require collateral, which means that lenders rely more heavily on your credit score,
+            along with other factors, to determine eligibility. Check your credit score for free using
+            <a href="#" class="text-secondary hover:text-secondary-200">My LendingTree</a>.
+          </li>
+          <li>
+            <strong>Calculate how much you need to borrow. </strong>Add up all your monthly debt payments that you wish
+            to consolidate. You can use a personal loan to pay off credit cards, payday loans and other high-interest
+            debts.
+          </li>
+          <li>
+            <strong>Determine the APR you need in order to save money.</strong> Your APR would need to be lower than
+            what you’re currently paying on your debts for a personal loan to be worthwhile.
+          </li>
+          <li>
+            <strong>Compare APRs by prequalifying with lenders. </strong>Many lenders let you
+            <a href="#" class="text-secondary hover:text-secondary-200">prequalify for a personal loan</a>
+            to get an idea of your potential APR without impacting your credit score. This lets you compare estimated
+            loan offers before you formally apply.
+          </li>
+          <li>
+            <strong>Formally apply with a lender.</strong> If you’re approved, the lender can deposit the funds directly
+            into your bank account. You can use that money to pay off all types of debt.
+          </li>
+        </ol>
+
+        <div class="text-center mt-8 md:mt-10">
+          <a href="#" class="btn">See personal loan offers</a>
+        </div>
+      </section>
+
+      <section class="section bg-primary-300" id="benefits">
+        <div class="container">
+          <h2 class="heading-primary text-center">3 major benefits of debt consolidation</h2>
+
+          <div class="grid md:grid-cols-3 gap-8 mt-6 md:mt-12">
+            <div class="space-y-1">
+              <h4 class="text-lg text-dark-200 font-bold">1. Track debt repayment</h4>
+              <p>
+                Once you consolidate your debts, regardless of which method you use, you’ll have one bill to pay. This
+                can help you stay on top of your finances and set an attainable goal for your debt repayment plan.
+              </p>
+            </div>
+
+            <div class="space-y-1">
+              <h4 class="text-lg text-dark-200 font-bold">2. Save money on interest</h4>
+              <p>
+                Ideally, you’ll use a financial product with a lower interest rate and fewer fees than what’s charged on
+                your current debts. This reduction in interest will help you save money you’d have been required to pay
+                had you not consolidated.
+              </p>
+            </div>
+
+            <div class="space-y-1">
+              <h4 class="text-lg text-dark-200 font-bold">3. Build your credit score</h4>
+              <p>
+                Paying off
+                <a href="#" class="text-secondary hover:text-secondary-200 underline">credit card debt</a>
+                with a loan can have an immediate effect on your credit score by lowering your credit utilization ratio.
+                This is the total amount of credit available to you versus the amount of credit card debt you have.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="difference">
+        <div class="container">
+          <h2 class="heading-primary text-center">Debt consolidation vs. debt relief: What’s the difference?</h2>
+
+          <p class="mt-6 md:mt-12 text-center max-w-3xl mx-auto">
+            Whereas debt consolidation involves taking out a new loan or credit card to repay debt on better terms, debt
+            relief seeks to reduce the amount of debt you owe through negotiation or legal means.
+            <strong>Debt relief comes in many forms, such as credit counseling, debt settlement and bankruptcy.</strong>
+          </p>
+
+          <div class="grid md:grid-cols-3 gap-8 mt-6 md:mt-10">
+            <div class="space-y-1">
+              <p>
+                <a class="text-lg text-secondary hover:text-secondary-200 font-bold" href="#">Credit counseling</a> is a
+                nonprofit service to help you manage expenses and debt payments more effectively. A credit counselor may
+                set you up on a debt management plan and even negotiate debts and monthly payments on your behalf.
+              </p>
+            </div>
+
+            <div class="space-y-1">
+              <p>
+                <a class="text-lg text-secondary hover:text-secondary-200 font-bold" href="#">Debt settlement </a>
+                involves negotiating with your creditors to lower the amount of debt you owe and reduce fees charged to
+                your account. Some companies offer this service, but these programs may come with high fees and can
+                severely damage your credit.
+              </p>
+            </div>
+
+            <div class="space-y-1">
+              <p>
+                <a class="text-lg text-secondary hover:text-secondary-200 font-bold" href="#">Bankruptcy</a>
+                is a legal process offering debt relief for an individual or business. When you file for bankruptcy,
+                your assets may be sold to repay your creditors, or you may be enrolled in a court-ordered debt
+                repayment plan.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section bg-neutral-100" id="faq">
+        <div class="container">
+          <h2 class="heading-primary text-center">Debt Consolidation FAQ</h2>
+
+          <div class="mt-8 md:mt-12">
+            <div class="accordion max-w-3xl mx-auto">
+              <!-- Accordion item -->
+              <div class="accordion__item">
+                <div class="accordion__heading text-400">IS DEBT CONSOLIDATION WORTH IT?</div>
+                <div class="accordion__body">
+                  <p>
+                    <a href="#">Debt consolidation</a> can help you keep track of payments, get a lower interest rate
+                    and pay off your debt faster. It’s a smart move under the right circumstances, but you’ll want to
+                    weigh your options to see if this is a good idea for your situation.
+                  </p>
+                  <p>
+                    For example, it’s not worth consolidating if you can’t get a lower APR on the new form of financing
+                    than what you’re currently paying on your debts. But when you consolidate debt for a lower APR,
+                    you’ll save money in the long run, and you may be able to save money on monthly payments, too.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Accordion item -->
+              <div class="accordion__item">
+                <div class="accordion__heading text-400">WHAT DOES DEBT CONSOLIDATION DO TO YOUR CREDIT?</div>
+                <div class="accordion__body">
+                  <p>
+                    Debt consolidation can affect your credit score. There might be a small drop in your credit score
+                    after consolidating debt, since you are taking out a new credit product or loan. You might also see
+                    a dip in your credit score if you settle a debt or work with a debt management service.
+                  </p>
+                  <p>
+                    Some borrowers see their credit score increase by consolidating debt, particularly credit card
+                    balances. Paying off credit card balances lowers your credit utilization ratio, which can give your
+                    credit score a boost.
+                  </p>
+                  <p>
+                    Whatever the initial effect on your credit score, debt consolidation can help you increase your
+                    credit score over the long term. If you choose an option with affordable payments, you can build up
+                    a healthy payment history, which is central to a good credit score.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Accordion item -->
+              <div class="accordion__item">
+                <div class="accordion__heading text-400">DO I NEED GOOD CREDIT TO CONSOLIDATE DEBT?</div>
+                <div class="accordion__body">
+                  <p>
+                    <a href="#">Debt consolidation</a> can help you keep track of payments, get a lower interest rate
+                    and pay off your debt faster. It’s a smart move under the right circumstances, but you’ll want to
+                    weigh your options to see if this is a good idea for your situation.
+                  </p>
+                  <p>
+                    For example, it’s not worth consolidating if you can’t get a lower APR on the new form of financing
+                    than what you’re currently paying on your debts. But when you consolidate debt for a lower APR,
+                    you’ll save money in the long run, and you may be able to save money on monthly payments, too.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
