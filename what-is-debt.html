@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="preload">
+    <!-- Mobile navbar start -->
+    <div class="navbar-mobile">
+      <a href="#" class="inline-flex items-center justify-center w-14 h-14">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </a>
+      <a href="./index.html" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="company-name" />
+      </a>
+
+      <button type="button" class="navbar-mobile-burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <nav class="navbar-mobile-content">
+        <ul class="space-y-3 flex-1">
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-PersonalLoans inline-block text-xl mr-2" aria-hidden="true"></span> Loans
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-Mortgage inline-block text-xl mr-2" aria-hidden="true"></span> Mortgages
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-CreditCards inline-block text-xl mr-2" aria-hidden="true"></span> Credit Cards
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="h-px bg-white/20 my-10">&nbsp;</div>
+
+        <div class="px-5">
+          <p>Get your free credit score in minutes!</p>
+
+          <div class="mt-5 flex space-x-4">
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Login</a>
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Sing Up for Free</a>
+          </div>
+
+          <div class="mt-10 flex space-x-2 items-center">
+            <span class="icon-MobilePhone text-xl" aria-hidden="true"></span>
+            <p>Call Us <a href="tel:+18008134620" rel="nofollow" class="text-secondary">1-800-813-4620</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile navbar end -->
+
+    <!-- Desktop navbar start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="" />
+      </a>
+
+      <ul class="navbar-nav">
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Loans
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Mortgages
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Credit Cards
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="flex space-x-4 ml-auto">
+        <a class="hover:text-secondary-200 transition-colors" href="#">Sign up for Free</a>
+        <a class="hover:text-secondary-200 transition-colors" href="#">Log in</a>
+        <a class="hover:text-secondary-200 transition-colors" href="tel:+18008134620">1-800-813-4620</a>
+      </div>
+    </div>
+    <!-- Desktop navbar end -->
+
+    <main class="container py-6">
+      <div class="grid md:grid-cols-12">
+        <div class="md:col-span-9">
+          <a class="text-xs" href="./debt-consolidation.html">Debt Consolidation</a>
+          <br />
+          <div class="tooltip mt-4">
+            <p class="text-secondary text-xs">How Does LendingTree Get Paid?</p>
+
+            <div class="tooltip-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, minima delectus accusamus libero odio
+              quas quae iusto ducimus nisi hic corporis vitae ad! Error, quae unde corrupti dignissimos hic sapiente.
+            </div>
+          </div>
+
+          <div class="prose max-w-none mt-6">
+            <h1>How to Get Debt Consolidation Loans With Bad Credit</h1>
+          </div>
+
+          <div class="mt-6 flex -mx-4 divide-x divide-neutral-400">
+            <div class="px-4">
+              <p class="text-xs text-neutral-400">Written by</p>
+              <a class="text-sm text-dark-200 uppercase leading-none font-bold hover:text-secondary" href="#">
+                Amanda Push
+              </a>
+              <br />
+              <a class="text-sm text-dark-200 uppercase leading-none font-bold hover:text-secondary" href="#">
+                Erika Giovanetti
+              </a>
+            </div>
+
+            <div class="px-4">
+              <p class="text-xs text-neutral-400">Edited by</p>
+              <a class="text-sm text-dark-200 uppercase leading-none font-bold hover:text-secondary" href="#">
+                Amanda Push
+              </a>
+              <br />
+              <a class="text-sm text-dark-200 uppercase leading-none font-bold hover:text-secondary" href="#">
+                Erika Giovanetti
+              </a>
+            </div>
+          </div>
+
+          <p class="text-xs text-neutral-400 mt-4">Updated on: March 3rd, 2022</p>
+          <p class="text-sm italic text-neutral-400 mt-4">
+            Editorial Note: The content of this article is based on the author’s opinions and recommendations alone. It
+            may not have been reviewed, commissioned or otherwise endorsed by any of our network partners.
+          </p>
+
+          <div class="prose max-w-none mt-6">
+            <p>
+              Debt consolidation combines multiple debts into one, ideally with a lower interest rate. It may help you
+              pay down your debts faster and lower your monthly payments, in addition to saving you money on interest in
+              the long run.
+            </p>
+
+            <p>
+              Qualifying with a lender can be a challenge if your credit score needs some work, but there are debt
+              consolidation loans for bad credit. Just pay close attention to factors that could affect your cost of
+              borrowing, such as interest rate, fees and loan duration.
+            </p>
+          </div>
+
+          <div class="article-nav mt-6">
+            <h4 class="text-lg font-bold text-dark-200">In this guide…</h4>
+            <ul class="toc-list">
+              <li><a href="#">Best debt consolidation loans for bad credit</a></li>
+              <li><a href="#">What is a debt consolidation loan? The basics</a></li>
+              <li><a href="#">Pros and cons of a debt consolidation loan</a></li>
+              <li><a href="#">How to qualify for a debt consolidation loan if you have bad credit</a></li>
+              <li><a href="#">Alternatives to consolidating debt with bad credit</a></li>
+              <li><a href="#">FAQ: Debt consolidation loans for bad credit</a></li>
+              <li><a href="#">Methodology</a></li>
+            </ul>
+          </div>
+
+          <div class="prose max-w-none mt-6">
+            <h2>Best debt consolidation loans for bad credit</h2>
+          </div>
+
+          <div class="tooltip mt-4">
+            <p class="text-secondary text-xs">How Does LendingTree Get Paid?</p>
+
+            <div class="tooltip-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, minima delectus accusamus libero odio
+              quas quae iusto ducimus nisi hic corporis vitae ad! Error, quae unde corrupti dignissimos hic sapiente.
+            </div>
+          </div>
+
+          <!-- This example requires Tailwind CSS v2.0+ -->
+          <div class="flex flex-col">
+            <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded">
+                  <table class="min-w-full divide-y divide-primary">
+                    <thead class="bg-primary">
+                      <tr>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left font-bold text-white sm:pl-6">Lender</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">Best for...</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">Minimum credit score</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">APR</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">Loan length</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">Loan amount</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">Origination fee</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                      <tr>
+                        <td class="px-3 py-4 text-sm text-dark-200">
+                          <img class="w-[72px]" src="./assets/img/brands/AvantLogo.jpeg" alt="" />
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Fast funding</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">600</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">9.95% - 35.99%</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">24 to 60 months</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">$2,000 to $35,000</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Up to 4.75%</td>
+                      </tr>
+                      <tr>
+                        <td class="px-3 py-4 text-sm text-dark-200">
+                          <img class="w-[72px]" src="./assets/img/brands/AvantLogo.jpeg" alt="" />
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Consolidating credit card debt</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">640</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">5.99% - 24.99%</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">24 and 60 months</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">$5,000 to $40,000</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">0.00% - 5.00%</td>
+                      </tr>
+                      <tr>
+                        <td class="px-3 py-4 text-sm text-dark-200">
+                          <img class="w-[72px]" src="./assets/img/brands/AvantLogo.jpeg" alt="" />
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Low borrowing amounts</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Not specified</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">7.04% - 35.89%</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">36 or 60 months</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">$1,000 to $40,000</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">3.00% - 6.00%</td>
+                      </tr>
+                      <tr>
+                        <td class="px-3 py-4 text-sm text-dark-200">
+                          <img class="w-[72px]" src="./assets/img/brands/AvantLogo.jpeg" alt="" />
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Fast funding</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">600</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">9.95% - 35.99%</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">24 to 60 months</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">$2,000 to $35,000</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Up to 4.75%</td>
+                      </tr>
+                      <tr>
+                        <td class="px-3 py-4 text-sm text-dark-200">
+                          <img class="w-[72px]" src="./assets/img/brands/AvantLogo.jpeg" alt="" />
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Consolidating credit card debt</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">640</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">5.99% - 24.99%</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">24 and 60 months</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">$5,000 to $40,000</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">0.00% - 5.00%</td>
+                      </tr>
+                      <tr>
+                        <td class="px-3 py-4 text-sm text-dark-200">
+                          <img class="w-[72px]" src="./assets/img/brands/AvantLogo.jpeg" alt="" />
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Low borrowing amounts</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">Not specified</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">7.04% - 35.89%</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">36 or 60 months</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">$1,000 to $40,000</td>
+                        <td class="px-3 py-4 text-sm text-dark-200">3.00% - 6.00%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 text-center">
+            <a href="#" class="btn">Compare Debt Consolidation Loans</a>
+          </div>
+
+          <div class="prose max-w-none mt-6">
+            <h2>Avant: Best for fast funding</h2>
+
+            <p><strong>Minimum credit score: </strong>600</p>
+            <p><strong>APR: </strong>9.95% – 35.99%</p>
+            <p><strong>Loan length: </strong>24 to 60 months</p>
+            <p><strong>Loan length: </strong>24 to 60 months</p>
+            <p><strong>Origination fee: </strong>Up to 4.75%</p>
+            <p>
+              As Avant reports to all
+              <a
+                href="https://www.lendingtree.com/credit-repair/why-do-credit-bureaus-report-differently/"
+                target="_blank"
+                rel="noopener"
+                aria-describedby="audioeye_new_window_message"
+                >three credit bureaus</a
+              >
+              — Equifax, Experian, and TransUnion — taking out a debt consolidation loan through this lender could help
+              you increase your creditworthiness should you decide to apply for another personal loan down the road.
+              Avant also funds your loan as quickly as the next business day so you won’t be waiting around very long.
+            </p>
+
+            <h3>What to like</h3>
+            <ul>
+              <li>Receive funds as soon as the next business day</li>
+              <li>Lower origination fee compared to other lenders</li>
+              <li>Reports to all three credit bureaus</li>
+            </ul>
+
+            <h3>What to keep in mind</h3>
+            <ul>
+              <li>Low maximum borrowing amount</li>
+              <li>Charges an origination fee</li>
+              <li>Charges late fee and dishonored payment fee</li>
+            </ul>
+
+            <div class="text-center">
+              <a href="#" class="btn">Read our full Avant review</a>
+            </div>
+          </div>
+
+          <div class="prose max-w-none mt-6">
+            <h2 id="Payoff">Happy Money: Best for consolidating credit card debt</h2>
+            <p><strong>Minimum credit score: </strong>640</p>
+            <p><strong>APR: </strong>5.99% &#8211; 24.99%</p>
+            <p><strong>Loan length: </strong>24 and 60 months</p>
+            <p><strong>Loan amount: </strong>$5,000 to $40,000</p>
+            <p><strong>Origination fee:</strong> 0.00% - 5.00%</p>
+            <p>
+              Happy Money (formerly Payoff) is transparent about its debt consolidation loan requirements, making the
+              information easy to find on its website. To qualify for a Happy Money loan, however, you’ll need to make
+              sure you have no delinquent payments and a credit score of at least 640. In addition, Happy Money also
+              doesn&#8217;t charge application or late fees, and its loans are specifically for those wanting to
+              <a href="https://www.lendingtree.com/debt-consolidation/credit-card/" target="_blank" rel="noopener"
+                >consolidate credit card debt</a
+              >.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Transparent about loan requirements</li>
+              <li>No application or late payment fees</li>
+              <li>Consolidation loans specifically geared toward credit card debt</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Funding time typically two to five business days</li>
+              <li>No joint applications</li>
+              <li>Loans not available in Massachusetts or Nevada</li>
+            </ul>
+            <div class="text-center mt-6"><a class="btn" href="#">Read our full Happy Money review</a></div>
+          </div>
+
+          <div class="prose max-w-none mt-6">
+            <h2 id="Peerform">Peerform: Best for peer-to-peer lending</h2>
+            <p><strong>Minimum credit score: </strong>600</p>
+            <p><strong>APR: </strong>5.99% &#8211; 29.99%</p>
+            <p><strong>Loan length: </strong>36 or 60 months</p>
+            <p><strong>Loan amount: </strong>$4,000 to $25,000</p>
+            <p><strong>Origination fee: </strong>1.00% - 5.00%</p>
+            <p>
+              Peerform is unique to this list as, instead of being a lender, it&#8217;s a
+              <a href="https://www.lendingtree.com/personal/peer-to-peer/" target="_blank" rel="noopener"
+                >peer-to-peer lending</a
+              >
+              marketplace. Here’s how it works: After you apply, your creditworthiness is calculated by an algorithm
+              that assigns you a grade, as well as an interest rate. If you’re approved for a loan, it will show up in
+              the Peerform marketplace where investors will decide whether or not to fund your loan.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Low origination fee compared to other lenders</li>
+              <li>No prepayment penalties</li>
+              <li>Examines factors other than credit score for loan approval</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Low borrowing amount</li>
+              <li>High minimum borrowing amount at $4,000</li>
+              <li>Less flexible repayment terms compared to other lenders</li>
+            </ul>
+            <div class="text-center mt-6"><a class="btn" href="#">Read our full Peerform review</a></div>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="LendingClub">LendingClub: Best for low borrowing amounts</h2>
+            <p><strong>Minimum credit score: </strong>Not specified</p>
+            <p><strong>APR: </strong>7.04% &#8211; 35.89%</p>
+            <p><strong>Loan length: </strong>36 or 60 months</p>
+            <p><strong>Loan amount: </strong>$1,000 to $40,000</p>
+            <p><strong>Origination fee:</strong> 3.00% - 6.00%</p>
+            <p>
+              Like many lenders on this list, LendingClub requires an individual to have a credit score of at least Not
+              specified. However, if you’re applying for a
+              <a
+                href="https://www.lendingtree.com/personal/how-to-get-a-joint-personal-loan/"
+                target="_blank"
+                rel="noopener"
+                >joint personal loan</a
+              >, you’ll only need a minimum credit score of 540. Not only does LendingClub pay your creditors directly,
+              but you may also receive your funds within 48 hours.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Option to change your due date one time</li>
+              <li>Receive funds within 48 hours</li>
+              <li>15-day grace period for payments</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Doesn&#8217;t offer loans in Iowa or Idaho</li>
+              <li>Limited borrower terms</li>
+              <li>Charges origination and late payment fees</li>
+            </ul>
+            <div class="text-center mt-6"><a class="btn" href="#">Read our full LendingClub review</a></div>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="LendingPoint">LendingPoint: Best for low credit scores</h2>
+            <p><strong>Minimum credit score: </strong>585</p>
+            <p><strong>APR: </strong>7.99% &#8211; 35.99%</p>
+            <p><strong>Loan length: </strong>24 to 72 months</p>
+            <p><strong>Loan amount: </strong>$2,000 to $36,500</p>
+            <p><strong>Origination fee: </strong>0.00% - 7.00%</p>
+            <p>
+              LendingPoint holds the lowest minimum credit score on this list, giving consumers with scores below the
+              585 mark an opportunity to qualify for a debt consolidation loan. However, keep in mind that if you have a
+              <a
+                href="https://www.lendingtree.com/personal/best-personal-loans-for-bad-credit/"
+                target="_blank"
+                rel="noopener"
+                >poor credit score</a
+              >, you most likely won’t be eligible for LendingPoint’s lower APR rates.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Funds deposited as soon as next business day</li>
+              <li>Low minimum credit score</li>
+              <li>Annual income requirement of only $25,000</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Loans not provided in Nevada or West Virginia</li>
+              <li>Doesn&#8217;t offer joint or cosigned loans</li>
+              <li>APR rates can get as high as 35.99%</li>
+            </ul>
+            <div class="text-center mt-6"><a class="btn" href="#">Read our full LendingPoint review</a></div>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="OneMainFinancial">OneMain Financial: Best for secured loans</h2>
+            <p><strong>Minimum credit score: </strong>Not specified</p>
+            <p><strong>APR:</strong> 18.00% &#8211; 35.99%</p>
+            <p><strong>Loan length: </strong>24 to 60 months</p>
+            <p><strong>Loan amount: </strong>$1,500 to $20,000</p>
+            <p><strong>Origination fee: </strong>1.00% - 10.00%</p>
+            <p>
+              OneMain Financial may be best for those seeking
+              <a href="https://www.lendingtree.com/personal/small-loans/" target="_blank" rel="noopener">small loans</a
+              >, as its maximum loan amount is $20,000. This lender’s APR rates are also higher than many of the other
+              lenders on this list; however, they may be significantly lower than rates offered by predatory lenders.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Offers both secured and unsecured loans</li>
+              <li>Flexible repayment terms of 24 to 60 months</li>
+              <li>Physical branches located throughout the country</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Low maximum loan amount</li>
+              <li>High origination fees — 1.00% - 10.00%</li>
+              <li>High APR rates of 35.99%</li>
+            </ul>
+            <div class="text-center mt-6"><a class="btn" href="#">Read our full OneMain Financial review</a></div>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="Upgrade">Upgrade: Best for joint applications</h2>
+            <p><strong>Minimum credit score: </strong>620</p>
+            <p><strong>APR: </strong>6.95% &#8211; 35.97%</p>
+            <p><strong>Loan length: </strong>24 to 84 months</p>
+            <p><strong>Loan amount: </strong>$1,000 to $50,000</p>
+            <p><strong>Origination fee: </strong>1.85% - 8.00%</p>
+            <p>
+              Upgrade has the highest minimum credit score requirement on this list. However, if your credit score isn’t
+              quite up to par, this lender offers joint loan applications as well as
+              <a
+                href="https://www.lendingtree.com/personal/is-a-secured-loan-right-for-you/"
+                target="_blank"
+                rel="noopener"
+                >secured loans</a
+              >. Consumers can apply for up to $50,000 and receive their money within one business day after being
+              approved.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Receive funds within a day of approval</li>
+              <li>Among highest maximum loan amounts on list</li>
+              <li>Offers joint applications and secured loans</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Can only choose from two loan terms</li>
+              <li>620 minimum credit score</li>
+              <li>Loans not available in Washington D.C. or West Virginia</li>
+            </ul>
+            <div class="text-center mt-6"><a class="btn" href="#">Read our full Upgrade review</a></div>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="Upstart">Upstart: Best for high borrowing amounts</h2>
+            <p><strong>Minimum credit score: </strong>600</p>
+            <p><strong>APR: </strong>4.37% &#8211; 35.99%</p>
+            <p><strong>Loan length: </strong>36 or 60 months</p>
+            <p><strong>Loan amount: </strong>$1,000 to $50,000</p>
+            <p><strong>Origination fee:</strong> 0.00% - 8.00%</p>
+            <p>
+              Consumers interested in Upstart can borrow up to $50,000 and receive funds within one business day after
+              they’ve been approved. Unfortunately, if your credit doesn’t quite meet the requirements, Upstart
+              doesn&#8217;t offer joint loans.
+            </p>
+            <h4>What to like</h4>
+            <ul>
+              <li>Borrowers can take out up to $50,000</li>
+              <li>Can receive funds within one business day of approval</li>
+              <li>Can apply for a second loan if you already have one</li>
+            </ul>
+            <h4>What to keep in mind</h4>
+            <ul>
+              <li>Restrictive loan terms of 36 or 60 months</li>
+              <li>Not available to Iowa or West Virginia residents</li>
+              <li>Doesn&#8217;t offer joint loans</li>
+            </ul>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="whatisadebtconsolidationloanThebasics">What is a debt consolidation loan? The basics</h2>
+            <p>
+              One common way to consolidate debt is to take out a debt consolidation loan. This is a type of
+              <a href="https://www.lendingtree.com/personal/" target="_blank" rel="noopener">personal loan</a> that’s
+              used to roll multiple debts into a new one, ideally with a lower interest rate than what you’re currently
+              paying. This would also reduce the number of debt payments you make each month, and could even shorten the
+              amount of time you’re repaying debt.
+            </p>
+            <p>
+              Personal loans for debt consolidation are typically unsecured, which means they don’t require collateral.
+              The lender will rely heavily on your credit score and debt-to-income (DTI) ratio to determine your
+              eligibility and interest rates. But because of this, it can be difficult for people with bad credit to
+              qualify, or to get a competitive APR.
+            </p>
+            <p>
+              However, there are
+              <a
+                href="https://www.lendingtree.com/personal/best-personal-loans-for-bad-credit/"
+                target="_blank"
+                rel="noopener"
+                >lenders that work with bad-credit borrowers</a
+              >. Just be sure to check your estimated APR, which represents the total cost of borrowing. Your debt
+              consolidation loan APR should be lower than what you’re paying on your current debts, like credit card
+              debt.
+            </p>
+          </div>
+          <div class="prose max-w-none mt-6">
+            <h2 id="prosandconsofadebtconsolidationloan">Pros and cons of a debt consolidation loan</h2>
+            <p>
+              Debt consolidation loans aren’t right for everyone, so consider the
+              <a
+                href="https://www.lendingtree.com/debt-consolidation/pros-and-cons-of-debt-consolidation-options/"
+                target="_blank"
+                rel="noopener"
+                >benefits and drawbacks</a
+              >
+              and ask yourself some questions about your debt payoff strategy.
+            </p>
+
+            <!-- This example requires Tailwind CSS v2.0+ -->
+          </div>
+
+          <div class="flex flex-col my-6">
+            <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+              <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded">
+                  <table class="min-w-full divide-y divide-primary">
+                    <thead class="bg-primary">
+                      <tr>
+                        <th scope="col" class="py-3.5 pl-4 pr-3 text-left font-bold text-white sm:pl-6">Lender</th>
+                        <th scope="col" class="px-3 py-3.5 text-left font-bold text-white">Best for...</th>
+                      </tr>
+                    </thead>
+
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                      <tr class="divide-x divide-gray-200">
+                        <td class="px-3 py-4 text-sm text-dark-200 space-y-4">
+                          <p>
+                            <i class="icon-Check text-green-600"></i>&nbsp; May offer lower interest rates than what
+                            you’re currently paying
+                          </p>
+                          <p>
+                            <i class="icon-Check text-green-600"></i>&nbsp; Can reduce the size — and number — of
+                            monthly payments
+                          </p>
+                          <p>
+                            <i class="icon-Check text-green-600"></i>&nbsp; Could improve your credit score if credit
+                            utilization goes down
+                          </p>
+                        </td>
+                        <td class="px-3 py-4 text-sm text-dark-200 space-y-4">
+                          <p>
+                            <i class="icon-Ex text-red-500"></i>&nbsp; Getting a good APR can be difficult with bad
+                            credit
+                          </p>
+                          <p>
+                            <i class="icon-Ex text-red-500"></i>&nbsp; You may not qualify for a large enough loan to
+                            pay off all debts
+                          </p>
+                          <p>
+                            <i class="icon-Ex text-red-500"></i>&nbsp; New hard inquiry can negatively impact an already
+                            bad credit score
+                          </p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="prose max-w-none">
+            <p>
+              <strong> Will the interest rate you receive be worth it?</strong> If you have serious credit problems,
+              you’ll likely have trouble qualifying for a decent APR. Compare the interest rates on your existing
+              accounts with debt consolidation loans — you should also look out for
+              <a href="https://www.lendingtree.com/personal/tips-to-get-preapproved/" target="_blank" rel="noopener"
+                >prequalification</a
+              >, which lets you compare estimated APRs without hurting your credit score.
+            </p>
+            <p>
+              <strong> Do you have a debt payoff plan? </strong>Consolidation alone usually isn’t enough to help you
+              achieve freedom from debt. But if you’re willing to follow a
+              <a
+                href="https://www.lendingtree.com/debt-consolidation/how-to-get-out-of-debt/"
+                target="_blank"
+                rel="noopener"
+                >debt payoff plan</a
+              >, a debt consolidation loan could fit into the process nicely.
+            </p>
+            <p>
+              <strong> Can you avoid new debt?</strong> The last thing you want to do is pay off something with a
+              consolidation loan and start racking up charges. You’ll need to be 100% committed to avoiding new debt, or
+              consolidation could snowball into a bigger money and credit problem down the road.
+            </p>
+          </div>
+          <div class="prose max-w-none mt-6"></div>
+          <div class="prose max-w-none mt-6"></div>
+          <div class="prose max-w-none mt-6"></div>
+          <div class="prose max-w-none mt-6"></div>
+        </div>
+        <div class="md:col-span-3">sidebar</div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container space-y-12">
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">About LendingTree</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Legal Information</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Privacy</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Online Tracking</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Security</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">Other Sites</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">SnapCap</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">CompareCards</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">DepositAccounts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-full xl:col-span-2 flex flex-col md:flex-row xl:flex-col gap-10">
+            <div class="text-sm text-center md:text-left">
+              <p class="text-white">Follow Us</p>
+              <div class="footer-social mt-4">
+                <a href="#" class="footer-social-link hover:bg-[#FB0801] hover:border-[#FB0801]">
+                  <img src="./assets/img/icons/youtube.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#1D9BF0] hover:border-[#1D9BF0]">
+                  <img src="./assets/img/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#4867AA] hover:border-[#4867AA]">
+                  <img src="./assets/img/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#F41366] hover:border-[#F41366]">
+                  <img src="./assets/img/icons/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text-center md:text-left">
+              <p class="text-white">Download Our App</p>
+              <div class="inline-flex mt-4 space-x-2">
+                <a href="#">
+                  <img class="h-10" src="./assets/img/apple-app-store-badge.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img class="h-10" src="./assets/img/google-play-store-badge.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="lg:col-span-3">
+            <p class="text-gray-500">
+              LendingTree, LLC is a Marketing Lead Generator and is a Duly Licensed Mortgage Broker, as required by law,
+              with its main office located at 1415 Vantage Park Drive, Suite 700, Charlotte, NC 28203, Telephone Number
+              866-501-2397 (TDD/TTY). NMLS Unique Identifier #1136. LendingTree, LLC is known as LT Technologies in lieu
+              of true name LendingTree, LLC in NY. LendingTree technology and processes are patented under U.S. Patent
+              Nos. 6,385,594 and 6,611,816 and licensed under U.S. Patent Nos. 5,995,947 and 5,758,328. © 2016
+              LendingTree, LLC. All Rights Reserved. This site is directed at, and made available to, persons in the
+              continental U.S., Alaska and Hawaii only.
+            </p>
+          </div>
+
+          <div class="lg:col-span-1 xl:col-span-2 text-center md:text-left">
+            <p class="text-white">
+              <span class="font-bold">Online Security:</span>
+              <a href="#" class="hover:text-secondary-200">Protect Against Fraud</a>
+            </p>
+
+            <div class="inline-flex items-end mt-6 gap-6">
+              <a href="#">
+                <img src="./assets/img/icon-equal-housing.svg" width="40" height="28" alt="Equal Housing Opportunity" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-bbb.svg" width="35" height="53" alt="Better Business Bureau" />
+              </a>
+              <a href="#"> <img src="./assets/img/icon-comodo.svg" width="100" height="26" alt="Comodo Secure" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

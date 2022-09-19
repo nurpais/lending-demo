@@ -29,6 +29,32 @@
   a {
     @apply transition-colors duration-200;
   }
+
+  .prose h1 {
+    @apply text-3xl md:text-[44px] leading-snug;
+  }
+
+  .prose * {
+    @apply md:text-lg;
+  }
+
+  .prose h2 {
+    @apply mt-10 md:mt-14 mb-5 md:mb-11 text-2xl md:text-[34px] leading-snug relative;
+  }
+
+  .prose h2:before {
+    content: '';
+
+    @apply absolute left-0 -top-5 w-32 h-1.5 bg-primary;
+  }
+
+  .prose p a {
+    @apply no-underline text-secondary hover:text-secondary-200;
+  }
+
+  .prose a {
+    @apply no-underline;
+  }
 }
 
 /* Typography */
@@ -410,7 +436,7 @@
 /* Tooltip */
 @layer components {
   .tooltip {
-    @apply relative cursor-pointer;
+    @apply relative cursor-pointer inline-block;
   }
 
   .tooltip-text {
@@ -546,5 +572,31 @@
 
   .accordion__body a {
     @apply text-secondary hover:text-secondary-200;
+  }
+}
+
+/* Article nav (lightgreen) */
+@layer components {
+  .article-nav {
+    @apply p-5 shadow bg-green-100/80 rounded space-y-2;
+  }
+}
+
+/* toc-list */
+@layer components {
+  .toc-list {
+    @apply space-y-1;
+  }
+  .toc-list li a {
+    @apply py-2 inline-block text-secondary relative text-lg md:pl-3;
+  }
+
+  .toc-list li a::before {
+    content: '';
+    @apply absolute left-0 top-0 h-full bg-secondary w-1 hidden md:block opacity-0 will-change-auto transition-opacity;
+  }
+
+  .toc-list li a:hover:before {
+    @apply opacity-100;
   }
 }
