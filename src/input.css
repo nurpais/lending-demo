@@ -29,6 +29,10 @@
   a {
     @apply transition-colors duration-200;
   }
+  /* 
+  .prose * {
+    @apply text-dark-100;
+  }
 
   .prose h1 {
     @apply text-3xl md:text-[44px] leading-snug;
@@ -54,6 +58,35 @@
 
   .prose a {
     @apply no-underline;
+  } */
+
+  .debt-content > * + * {
+    @apply mt-6;
+  }
+
+  .debt-content {
+    @apply text-lg;
+  }
+
+  .debt-content a {
+    @apply text-secondary hover:text-secondary-200;
+  }
+
+  .debt-content h2 {
+    @apply mt-10 md:mt-14 mb-5 md:mb-11 text-2xl md:text-[34px] leading-snug relative text-dark-200;
+  }
+
+  .debt-content h2:before {
+    content: '';
+    @apply absolute left-0 -top-5 w-32 h-1.5 bg-primary;
+  }
+
+  .debt-content h3 {
+    @apply my-5 md:mt-10 text-lg md:text-2xl text-dark-200 font-bold;
+  }
+
+  .debt-content ul {
+    @apply list-disc pl-6 space-y-3 text-base;
   }
 }
 
@@ -576,11 +609,11 @@
 }
 
 /* Article nav (lightgreen) */
-@layer components {
+/* @layer components {
   .article-nav {
     @apply p-5 shadow bg-green-100/80 rounded space-y-2;
   }
-}
+} */
 
 /* toc-list */
 @layer components {
@@ -588,7 +621,7 @@
     @apply space-y-1;
   }
   .toc-list li a {
-    @apply py-2 inline-block text-secondary relative text-lg md:pl-3;
+    @apply py-2 inline-block text-secondary relative text-lg md:pl-4;
   }
 
   .toc-list li a::before {
