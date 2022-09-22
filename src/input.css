@@ -736,3 +736,33 @@
 .pagination a {
   @apply text-secondary hover:text-secondary-200 p-2;
 }
+
+/* DATA CONTENT */
+
+.data-content {
+  @apply overflow-hidden;
+}
+
+.data-content h2 {
+  @apply text-2xl md:text-4xl font-georgia text-dark-200 mb-[1em];
+}
+
+.data-content p {
+  @apply mb-[1em] leading-normal;
+}
+
+.data-content a {
+  @apply text-secondary hover:text-secondary-200;
+}
+
+.data-content ol {
+  @apply pl-5 mb-3 list-decimal;
+}
+
+.data-content li {
+  @apply pb-4;
+}
+
+.helpful-links a {
+  @apply leading-8;
+}

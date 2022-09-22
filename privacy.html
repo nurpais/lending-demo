@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="preload">
+    <!-- Mobile navbar start -->
+    <div class="navbar-mobile">
+      <a href="#" class="inline-flex items-center justify-center w-14 h-14">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </a>
+      <a href="./index.html" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="company-name" />
+      </a>
+
+      <button type="button" class="navbar-mobile-burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <nav class="navbar-mobile-content">
+        <ul class="space-y-3 flex-1">
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-PersonalLoans inline-block text-xl mr-2" aria-hidden="true"></span> Loans
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-Mortgage inline-block text-xl mr-2" aria-hidden="true"></span> Mortgages
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-CreditCards inline-block text-xl mr-2" aria-hidden="true"></span> Credit Cards
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="h-px bg-white/20 my-10">&nbsp;</div>
+
+        <div class="px-5">
+          <p>Get your free credit score in minutes!</p>
+
+          <div class="mt-5 flex space-x-4">
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Login</a>
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Sing Up for Free</a>
+          </div>
+
+          <div class="mt-10 flex space-x-2 items-center">
+            <span class="icon-MobilePhone text-xl" aria-hidden="true"></span>
+            <p>Call Us <a href="tel:+18008134620" rel="nofollow" class="text-secondary">1-800-813-4620</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile navbar end -->
+
+    <!-- Desktop navbar start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="" />
+      </a>
+
+      <ul class="navbar-nav">
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Loans
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Mortgages
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Credit Cards
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="flex space-x-4 ml-auto">
+        <a class="hover:text-secondary-200 transition-colors" href="#">Sign up for Free</a>
+        <a class="hover:text-secondary-200 transition-colors" href="#">Log in</a>
+        <a class="hover:text-secondary-200 transition-colors" href="tel:+18008134620">1-800-813-4620</a>
+      </div>
+    </div>
+    <!-- Desktop navbar end -->
+
+    <main class="container pt-6 md:pt-12 pb-10 md:pb-20">
+      <div class="data-content">
+        <h2>Privacy Policy</h2>
+
+        <div class="grid md:grid-cols-12 gap-8">
+          <div class="md:col-span-8">
+            <div itemprop="articleBody">
+              <p><strong>Privacy Policy</strong></p>
+              <p>Last Updated and Effective: February 5, 2021</p>
+              <p>
+                <a href="https://www.lendingtree.com/legal/privacy-policy/#caresidents"
+                  >Notice to California Residents</a
+                >
+                (Click here to learn more about your California Privacy Rights and for our Notice of Collection of
+                Personal Information).
+              </p>
+              <p>
+                <a href="https://www.lendingtree.com/content/uploads/2021/02/Consumer-Privacy-Disclosure2021.pdf"
+                  >Consumer Privacy Disclosure</a
+                >
+              </p>
+              <p>
+                You are visiting a website owned and operated by LendingTree, LLC. LendingTree, LLC and its subsidiaries
+                (collectively, “LendingTree”, “us”, “we”, or “our”) are committed to maintaining your confidence and
+                trust as it relates to the privacy and usage of your information. Please read below and learn how we
+                collect, protect, share, and use your information as part of our technology platforms, and all of our
+                products and services.
+              </p>
+              <p>
+                This privacy policy applies to www.lendingtree.com&nbsp;and all websites and mobile apps owned and
+                operated by LendingTree on which this privacy policy is displayed (such websites and apps referred to
+                hereafter as the “Website(s)” or “Site(s)”, whether individually or collectively, or collectively as
+                “Services”) as well as LendingTree affiliates.
+              </p>
+              <p>
+                LendingTree’s commercial loan Websites are designed for businesses and are not intended for individuals’
+                personal, family or household use. Accordingly, we treat all personal information collected for
+                commercial loan products, including information about any visitors to our commercial loan Websites, as
+                pertaining to individuals acting as business representatives, rather than in their personal capacity.
+              </p>
+              <p><strong>Information We Collect</strong></p>
+              <ol style="list-style-type: lower-alpha">
+                <li>
+                  <span style="text-decoration: underline">Identifying Information:</span> We collect information that
+                  could identify you such as your name, address, telephone number, mobile number, email address, and
+                  Social Security Number. We may also collect this type of information from you about others, such as
+                  co-borrowers.
+                </li>
+                <li>
+                  <span style="text-decoration: underline">Financial Information:</span> We may also collect your credit
+                  history, credit scores, your transaction history, and credit products, rates, and payments in the
+                  course of processing any application for our financial company partners’ products or services. For
+                  additional information relating to your choices about financial information specifically, see our
+                  <a href="https://www.lendingtree.com/content/uploads/2020/01/consumer-privacy.pdf"
+                    >Consumer Privacy Disclosure</a
+                  >
+                  .
+                </li>
+                <li>
+                  <span style="text-decoration: underline">Other Information:</span>&nbsp;We also collect information
+                  such as demographic data, data about your online activity, and other information that is not used to
+                  identify you.
+                </li>
+              </ol>
+              <p><strong>How We Collect Information</strong></p>
+              <ol>
+                <li>
+                  <span style="text-decoration: underline">Information provided by you:</span>&nbsp;We collect
+                  information from you when you enter it or otherwise provide it in connection with an inquiry into our
+                  Services. This information could be provided via an online form, over the phone, or via other means in
+                  which you interact with our Services.
+                </li>
+                <li>
+                  <span style="text-decoration: underline">Information from third parties:</span> Information is
+                  collected from credit bureaus, lead generators and other partners who may have data on your financial
+                  profile, home, or other demographic information.
+                </li>
+                <li>
+                  <span style="text-decoration: underline"
+                    >Information from cookies and other tracking technologies:</span
+                  >&nbsp;We use cookies, web beacons, and similar technologies to record your preferences, track the use
+                  of our Site and collect information. This information may include internet protocol (IP) addresses,
+                  browser type, internet service provider (ISP), referring/exit pages, operating system, date/time
+                  stamp, and/or clickstream data. We may combine this automatically collected log information with other
+                  information we collect about you. You may choose to set your web browser to refuse cookies, or to
+                  alert you when cookies are being sent. If you do so, please note that some parts of our Sites may not
+                  function properly.
+                </li>
+              </ol>
+              <p><strong>How We Use Information</strong></p>
+              <p>We may use collected information to:</p>
+              <ol>
+                <li>Deliver the products and services you requested</li>
+                <li>Improve customer service</li>
+                <li>Improve our Site</li>
+                <li>Personalize your user experience</li>
+                <li>Communicate with you about products or services that may be of interest to you</li>
+                <li>Manage our business</li>
+              </ol>
+              <p><strong>Who Do We Share Your Information With?</strong></p>
+              <p>
+                <span style="text-decoration: underline">LendingTree Affiliates:</span>&nbsp;We may share information
+                about you or provided by you with the LendingTree affiliates.
+              </p>
+              <p>
+                <span style="text-decoration: underline">Network Partners:</span>&nbsp;When you submit an inquiry or use
+                another Service provided through the Website, you direct LendingTree to share information about you or
+                provided by you with lenders and other third parties in our network to deliver the products and services
+                you request (collectively, “Network Partners”). <strong>PLEASE NOTE:</strong>&nbsp;The Network Partners
+                that interact with you may retain or use your information whether or not you use their services, and
+                their privacy and information sharing practices are set forth in their respective privacy policies.
+                Pursuant to the contracts between LendingTree and its Network Partners, if you select a Network Partner
+                through our Services, LendingTree may also receive information about you from that Network Partner
+                including, but not limited to, the amount or disposition of your Loan. LendingTree and its Network
+                Partners may exchange information about you, your loan terms, and your accounts for the purpose of
+                providing you with information about financial services and products. LendingTree may maintain this
+                information to assist with litigation, regulatory request(s), law enforcement requests, internal
+                analytics, marketing purposes, and any other legally permissible purpose.
+              </p>
+              <p>
+                <span style="text-decoration: underline">Financial Companies:</span> We may also share information about
+                you with other Financial Companies with whom we engage in joint marketing efforts, or who offer
+                financial related products or services that you may be interested in.&nbsp; These companies’ privacy and
+                information sharing practices are set forth in their respective privacy policies.
+              </p>
+              <p>
+                <span style="text-decoration: underline">Other Business Partners:</span> We also may share information
+                about you with other business partners who offer products and services that we believe you may be
+                interested in. Their privacy and information sharing practices are set forth in their respective privacy
+                policies.
+              </p>
+              <p>
+                <span style="text-decoration: underline">LendingTree Service Providers:</span>&nbsp;We may share
+                information with Service Providers that perform certain services on our behalf including, but not
+                limited to, credit bureaus, marketing partners, or entities providing business analysis and/or Website
+                or product support.
+              </p>
+              <p>
+                <span style="text-decoration: underline">Other Situations:</span> We may also disclose information about
+                you or provided by you at our sole discretion:
+              </p>
+              <ol>
+                <li>
+                  In response to a subpoena or similar investigative demand, a court order, a request for cooperation
+                  from a law enforcement agency, self-regulatory body, or other governmental agency; to establish or
+                  exercise our legal rights; to defend against legal claims; or as we reasonably believe is required by
+                  law. In such cases, we may raise or waive any legal objection or right available to us.
+                </li>
+                <li>
+                  When we believe disclosure is appropriate in order to investigate, prevent, or take action regarding
+                  actual or suspected illegal activity or other wrongdoing; to protect and defend the rights, property,
+                  or safety of the LendingTree business, our users, our employees, or others; or to enforce our Site’s
+                  terms and conditions or other agreements or policies.
+                </li>
+                <li>
+                  In connection with a substantial corporate transaction involving the LendingTree business, such as a
+                  sale of LendingTree or any entity, brand or division thereof, a divestiture, merger, consolidation,
+                  asset sale, or bankruptcy.
+                </li>
+                <li>
+                  In connection with state and/or federal licensing requirements regarding the reporting of information
+                  contained in the loan inquiries we receive from you. You authorize LendingTree to obtain any and all
+                  required information from the entities with whom you have interacted with in connection with
+                  LendingTree &nbsp;in order for LendingTree to comply with current laws and regulations as well as with
+                  any requests from state or federal regulators. This information could include, but is not necessarily
+                  limited to, the loan you selected and the terms of the loan you selected.
+                </li>
+                <li>
+                  We may share information with third parties that is not personally identifying, such as aggregated or
+                  anonymized data, in our discretion, where not prohibited by law.
+                </li>
+              </ol>
+              <p><strong>Cookies and Do Not Track</strong></p>
+              <ol style="list-style-type: lower-alpha">
+                <li>
+                  We may use cookies and other technologies such as web beacons and pixels to collect information about
+                  your online activities over time and across third-party websites or online services or which may allow
+                  a third party to track your online activities over time and across different sites when you use the
+                  Websites.
+                </li>
+                <li>The Websites may not respond to Do Not Track requests or headers from some or all browsers.</li>
+              </ol>
+              <p><strong>Marketing and Communications</strong></p>
+              <ol style="list-style-type: lower-alpha">
+                <li>
+                  <span style="text-decoration: underline">Communications:</span>&nbsp;You may adjust your
+                  communications preferences through your My LendingTree profile. You may also modify your preferences
+                  by clicking on an unsubscribe link at the bottom of certain emails sent from LendingTree.
+                </li>
+                <li>
+                  <span style="text-decoration: underline">Advertising on third party sites:</span>&nbsp;We may use
+                  third-party tracking technology. This technology allows targeted advertisements to you from
+                  LendingTree businesses.
+                  <a href="#Online-Tracking-and-Opt-out-Guide"
+                    >Please review the “Online Tracking and Opt-Out Guide” section of this Policy below for a detailed
+                    list of choices on how to opt out of ad targeting</a
+                  >.
+                </li>
+              </ol>
+              <p><strong>Updating and Accessing Your Information</strong></p>
+              <p>
+                The appropriate method(s) for accessing your information, if any, will depend on which Site or Services
+                you have used. Depending on the respective Site or Service, you may have the ability to view or edit
+                some of your information online using the respective Site or Service’s interface. If you have submitted
+                a loan request through us, you can update your information by contacting our Customer Care Department
+                at&nbsp;<a href="mailto:customercare@lendingtree.com">customercare@lendingtree.com</a>. Our address is
+                1415 Vantage Park Drive, Suite 700, Charlotte, NC 28203.
+              </p>
+              <p><strong>How We Protect Your Information</strong></p>
+              <p>
+                We maintain physical, electronic, and procedural measures designed to safeguard your information from
+                unauthorized access and disclosure. No system can be completely secure. Therefore, although we take
+                steps to secure your information, we cannot guarantee that your information, searches, or other
+                communication will always remain secure.
+              </p>
+              <p><strong>Changes to this Privacy Policy</strong></p>
+              <p>
+                LendingTree has the discretion to update this privacy policy at any time. When we do, we will revise the
+                date at the top of this page. We encourage you to frequently check this page for any changes to stay
+                informed about how we are helping to protect the information we collect. You acknowledge and agree that
+                it is your responsibility to review this privacy policy periodically and become aware of modifications.
+              </p>
+              <p><strong>Visiting our Websites From Outside the United States</strong></p>
+              <p>
+                The Site is designed to provide services in the United States and is governed by the laws of the United
+                States. We make no representation that the Sites are governed by or operated in accordance with the laws
+                of any other nation.
+              </p>
+              <p><strong>Compliance with Children’s Online Privacy Protection Rule</strong></p>
+              <p>
+                Our Services are not intended for individuals under 18 years of age, and we do not knowingly collect
+                personal information from individuals under 18. If we learn we have collected or received personal
+                information from a person under 18 without verification of parental consent, we will delete the
+                information.
+              </p>
+              <p><strong>LendingTree ChatBot Disclosure</strong></p>
+              <p>
+                Our LendingTree chat bot is enabled by Microsoft Bot Framework. The Microsoft Bot Framework is a set of
+                web-services that enable intelligent services and connections using conversation channels you authorize.
+                As a service provider, Microsoft will transmit content you provide to our bot/service in order to enable
+                the service. For more information about Microsoft privacy policies please see their privacy statement
+                here:&nbsp;<a href="https://go.microsoft.com/fwlink/?LinkId=521839"
+                  >http://go.microsoft.com/fwlink/?LinkId=521839</a
+                >. In addition, your interactions with this bot/service are also subject to the conversational channel’s
+                applicable terms of use, privacy and data collection policies. To report abuse when using a bot that
+                uses the Microsoft Bot Framework, please visit the Microsoft Bot Framework website at&nbsp;<a
+                  href="https://www.botframework.com/"
+                  >https://www.botframework.com</a
+                >&nbsp;and use the “Report Abuse” link in the menu to contact Microsoft.
+              </p>
+              <p id="Online-Tracking-and-Opt-out-Guide"><strong>Online Tracking Opt-Out Guide</strong></p>
+              <p>
+                Like many companies online, we use services provided by Google, Facebook and other companies that use
+                tracking technology. These services rely on tracking technologies – such as cookies and web beacons – to
+                collect directly from your device information about your browsing activities, your interactions with
+                websites, and the device you are using to connect to the Internet. There are a number of ways to opt out
+                of having your online activity and device data collected through these services, which we have
+                summarized below:
+              </p>
+              <p style="padding-left: 40px">
+                <strong>Blocking cookies in your browser.&nbsp;</strong>&nbsp;Most browsers let you remove or reject
+                cookies, including cookies used for interest-based advertising.&nbsp; To do this, follow the
+                instructions in your browser settings.&nbsp; Many browsers accept cookies by default until you change
+                your settings.&nbsp; For more information about cookies, including how to see what cookies have been set
+                on your device and how to manage and delete them, visit&nbsp;<a href="https://www.allaboutcookies.org/"
+                  >www.allaboutcookies.org</a
+                >.
+              </p>
+              <p style="padding-left: 40px">
+                <strong>Blocking advertising ID use in your mobile settings.</strong>&nbsp; Your mobile device settings
+                may provide functionality to limit use of the advertising ID associated with your mobile device for
+                interest-based advertising purposes.
+              </p>
+              <p style="padding-left: 40px">
+                <strong>Using privacy plug-ins or browsers.</strong>&nbsp; You can block our websites from setting
+                cookies used for interest-based ads by using a browser with privacy features, like Brave, or installing
+                browser plugins like Privacy Badger, Ghostery or uBlock Origin, and configuring them to block
+                third-party cookies/trackers.
+              </p>
+              <p style="padding-left: 40px">
+                <strong>Platform opt-outs.</strong>&nbsp; The following advertising partners offer opt-out features that
+                let you opt-out of use of your information for interest-based advertising:
+              </p>
+              <p style="padding-left: 40px">
+                Google:&nbsp;<a href="https://adssettings.google.com/">https://adssettings.google.com</a>
+              </p>
+              <p style="padding-left: 40px">
+                Facebook:&nbsp;<a href="https://www.facebook.com/about/ads">https://www.facebook.com/about/ads</a>
+              </p>
+              <p style="padding-left: 40px">
+                Twitter:&nbsp;<a href="https://twitter.com/personalization">https://twitter.com/personalization</a>
+              </p>
+              <p style="padding-left: 40px">
+                <strong>Advertising industry opt-out tools.</strong>&nbsp; You can also use these opt-out options to
+                limit use of your information for interest-based advertising by participating companies:
+              </p>
+              <p style="padding-left: 40px">
+                Digital Advertising Alliance:&nbsp;&nbsp;<a href="http://optout.aboutads.info/"
+                  >http://optout.aboutads.info</a
+                >
+              </p>
+              <p style="padding-left: 40px">
+                Network Advertising Initiative:&nbsp;<a href="http://optout.networkadvertising.org/?c=1"
+                  >http://optout.networkadvertising.org/?c=1</a
+                >
+              </p>
+              <p>
+                Note that because these opt-out mechanisms are specific to the device or browser on which they are
+                exercised, you will need to opt out on every browser and device that you use.
+              </p>
+              <p>
+                <strong>How to Contact Us</strong> If you have any questions about this privacy policy, the practices of
+                any LendingTree Business, or your dealings with a LendingTree Business, please contact us at:
+              </p>
+              <p>
+                Compliance Officer<br />LendingTree, LLC<br />1415 Vantage Park Drive<br />Suite 700<br />Charlotte, NC
+                28203
+              </p>
+              <p>or</p>
+              <p><a href="mailto:privacy@lendingtree.com">privacy@lendingtree.com</a> or at 1-888-272-1355</p>
+              <p id="caresidents"><strong>NOTICE TO CALIFORNIA RESIDENTS</strong></p>
+              <p>
+                We are required by the California Consumer Privacy Act of 2018 (“<strong>CCPA</strong>”) to provide
+                this&nbsp;<strong>CCPA Notice</strong>&nbsp;to California residents to explain how we collect, use and
+                share their personal Information, and the rights and choices we offer California residents regarding our
+                handling of their personal information.
+              </p>
+              <p><strong>CCPA Scope and Exclusions</strong></p>
+              <p>
+                This CCPA Notice, including the description of our&nbsp;<a
+                  href="https://www.lendingtree.com/legal/privacy-policy/#privacy"
+                  >Privacy Practices</a
+                >&nbsp;and your&nbsp;<a href="https://www.lendingtree.com/legal/privacy-policy/#privacy"
+                  >Privacy Rights</a
+                >, apply only to California residents whose interactions with us are limited to:
+              </p>
+              <ol style="list-style-type: lower-alpha">
+                <li>Visiting our consumer websites,</li>
+                <li>Signing up for email alerts,</li>
+                <li>Commenting on or contributing to our blogs,</li>
+                <li>Establishing an account that does not include financial products or services, or</li>
+                <li>
+                  Applying for our job openings on our websites &nbsp;(however, note that the CCPA limits some of the
+                  privacy rights for job applicants).&nbsp;
+                </li>
+              </ol>
+              <p>This CCPA Notice does not apply to the personal information we collect, use or disclose about:</p>
+              <ol style="list-style-type: lower-alpha">
+                <li>
+                  Consumers who initiate or complete the process of applying for financial products or services. This is
+                  because this information is subject to the federal Gramm-Leach-Bliley Act (“GLBA”) and implementing
+                  regulations, or the California Financial Information Privacy Act (“FIPA”), or Representatives of
+                  businesses that seek to obtain our products or services, or to provide products or services to us. For
+                  additional information relating to your choices about this information specifically, see our
+                  <a href="https://www.lendingtree.com/content/uploads/2020/01/consumer-privacy.pdf"
+                    >Consumer Privacy Disclosure</a
+                  >.
+                </li>
+              </ol>
+              <p><strong>Privacy Practices</strong></p>
+              <p>
+                We do not sell personal information.&nbsp; As we explain in our&nbsp;<a
+                  href="https://www.lendingtree.com/legal/privacy-policy/#privacy"
+                  >Privacy Policy:</a
+                >
+              </p>
+              <p>
+                We use cookies and other tracking technologies to analyze website traffic and facilitate advertising. If
+                you would like to learn how you may opt out of our (and our third party advertising partners’) use of
+                cookies and other tracking technologies, please review the instructions provided in the&nbsp;<a
+                  href="https://www.lendingtree.com/legal/privacy-policy/#Online-Tracking-and-Opt-out-Guide"
+                  >Online Tracking Opt-out Guide.</a
+                >
+              </p>
+              <!-- This example requires Tailwind CSS v2.0+ -->
+
+              <div class="mt-6 flex flex-col">
+                <div class="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">
+                  <div class="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
+                    <div class="overflow-hidden shadow ring-1 ring-black ring-opacity-5 md:rounded-lg">
+                      <table class="min-w-full divide-y divide-gray-300">
+                        <thead class="bg-gray-50">
+                          <tr>
+                            <th
+                              scope="col"
+                              class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-6"
+                            >
+                              How you interact with us
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                              Personal information collection
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                              CCPA-defined categories
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                              Sources of personal information
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                              Purposes for which we may collect and use the personal information
+                            </th>
+                            <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">
+                              Sharing
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-200 bg-white">
+                          <tr class="divide-x divide-gray-200">
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Sign up for email alerts</p>
+                              <p>Interact with our blogs</p>
+                              <p>Establish an account</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Contact information</p>
+                              <p>Professional</p>
+                              <p>credentials and skills</p>
+                              <p>Educational and work history</p>
+                              <p>Other resume data you provide</p>
+                              <p>Diversity information you voluntarily provide</p>
+                              <p>Disability information where necessary</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Identifiers</p>
+                              <p>Online identifiers</p>
+                              <p>Educational information</p>
+                              <p>Professional or employment information</p>
+                              <p>Protected classification characteristics</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>You</p>
+                              <p>References</p>
+                              <p>Background check and/or drug testing companies</p>
+                              <p>Employment agencies or recruiters</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Facilitate recruitment activities</p>
+                              <p>Process employment applications</p>
+                              <p>Monitoring recruitment statistics</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Shared with service providers</p>
+                              <p>Collected directly by or shared with background check and drug testing companies</p>
+                            </td>
+                          </tr>
+
+                          <tr class="divide-x divide-gray-200">
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Sign up for email alerts</p>
+                              <p>Interact with our blogs</p>
+                              <p>Establish an account</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Contact information</p>
+                              <p>Professional</p>
+                              <p>credentials and skills</p>
+                              <p>Educational and work history</p>
+                              <p>Other resume data you provide</p>
+                              <p>Diversity information you voluntarily provide</p>
+                              <p>Disability information where necessary</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Identifiers</p>
+                              <p>Online identifiers</p>
+                              <p>Educational information</p>
+                              <p>Professional or employment information</p>
+                              <p>Protected classification characteristics</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>You</p>
+                              <p>References</p>
+                              <p>Background check and/or drug testing companies</p>
+                              <p>Employment agencies or recruiters</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Facilitate recruitment activities</p>
+                              <p>Process employment applications</p>
+                              <p>Monitoring recruitment statistics</p>
+                            </td>
+                            <td class="px-3 py-4 text-sm text-gray-500">
+                              <p>Shared with service providers</p>
+                              <p>Collected directly by or shared with background check and drug testing companies</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <p>
+                Please note that we may also disclose all personal information as described in the “Who Do We Share Your
+                Information With?” section of the Privacy Policy.
+              </p>
+              <p><strong>Privacy Rights</strong></p>
+              <p>The CCPA grants individuals the following rights:</p>
+              <p>
+                <strong>Information.</strong>&nbsp;You can request information about how we have collected, used and
+                shared your Personal Information during the past 12 months.
+              </p>
+              <p>
+                <strong>Access.</strong>&nbsp;You can request a copy of the personal information that we maintain about
+                you.
+              </p>
+              <p>
+                <strong>Deletion.</strong>&nbsp;You can ask us to delete the personal information that we collected or
+                maintain about you.
+              </p>
+              <p>
+                Please note that the CCPA limits these rights by, for example, prohibiting us from providing certain
+                sensitive information in response to an access request and limiting the circumstances in which we must
+                comply with a deletion request. We will also respond to requests for information and access only to the
+                extent we are able to associate with a reasonable effort the information we maintain with the
+                identifying details you provide in your request. If we deny your request, we will communicate our
+                decision to you. You are entitled to exercise the rights described above free from discrimination.
+              </p>
+              <p><strong>How to Submit a Request</strong></p>
+              <p>To request access to or deletion of personal information:</p>
+              <p>Call 1-888-272-1355</p>
+              <p>Email:&nbsp;<a href="mailto:privacy@lendingtree.com">privacy@lendingtree.com</a></p>
+              <p>
+                <strong>Identity verification.</strong>&nbsp;The CCPA requires us to verify the identity of the
+                individual submitting a request to access or delete personal information before providing a substantive
+                response to the request.&nbsp; We will ask you to verify your identity when you submit a request.
+              </p>
+              <p>
+                <strong>Authorized agents. </strong>California residents can empower an “authorized agent” to submit
+                requests on their behalf.&nbsp; We will require the authorized agent to have a written authorization
+                confirming that authority.
+              </p>
+              <p>
+                <strong>Notice of Collection of Personal Information. </strong>We list the categories of your
+                information that we collect and the business and commercial purposes for our use as described in the
+                detailed chart above.
+              </p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="md:col-span-4">
+            <div class="helpful-links">
+              <h4 class="mb-4">Helpful Links</h4>
+              <div>
+                <p>
+                  <a href="/legal">Overview</a><br />
+                  <a href="/legal/privacy-policy" class="underline">Privacy Policy</a><br />
+                  <a href="/legal/advertising-disclosures">Advertising Disclosures</a><br />
+                  <a href="/legal/security">Security Policy</a><br />
+                  <a href="/legal/terms-of-use">Terms of Use</a><br />
+                  <a href="/legal/licenses-and-disclosures">Licenses &amp; Disclosures</a><br />
+                  <a href="/legal/reviews-ugc-terms-of-use">Reviews &amp; UGC Terms of Use</a><br />
+                  <a href="/legal/network-lenders-consent">Consent for Electronic Disclosures and Communication</a
+                  ><br />
+                  <a href="/legal/widget-terms-of-use">Widgets Terms of Use</a><br />
+                  <a href="/legal/do-not-call">Do Not Call</a><br />
+                  <a href="/legal/lo-terms-of-use">Loan Officer Directory Terms of Use</a><br />
+                  <a href="/legal/sms-terms-and-conditions">SMS Terms &amp; Conditions</a><br />
+                  <a href="/legal/ratebeat-guarantee-terms-and-conditions">RateBeat Guarantee Terms &amp; Conditions</a
+                  ><br />
+                  <a href="/legal/product-notice">Product Privacy Notice</a><br />
+                  <a href="/legal/accessibility-statement/">Accessibility Statement</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container space-y-12">
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">About LendingTree</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Legal Information</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Privacy</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Online Tracking</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Security</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">Other Sites</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">SnapCap</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">CompareCards</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">DepositAccounts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-full xl:col-span-2 flex flex-col md:flex-row xl:flex-col gap-10">
+            <div class="text-sm text-center md:text-left">
+              <p class="text-white">Follow Us</p>
+              <div class="footer-social mt-4">
+                <a href="#" class="footer-social-link hover:bg-[#FB0801] hover:border-[#FB0801]">
+                  <img src="./assets/img/icons/youtube.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#1D9BF0] hover:border-[#1D9BF0]">
+                  <img src="./assets/img/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#4867AA] hover:border-[#4867AA]">
+                  <img src="./assets/img/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#F41366] hover:border-[#F41366]">
+                  <img src="./assets/img/icons/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text-center md:text-left">
+              <p class="text-white">Download Our App</p>
+              <div class="inline-flex mt-4 space-x-2">
+                <a href="#">
+                  <img class="h-10" src="./assets/img/apple-app-store-badge.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img class="h-10" src="./assets/img/google-play-store-badge.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="lg:col-span-3">
+            <p class="text-gray-500">
+              LendingTree, LLC is a Marketing Lead Generator and is a Duly Licensed Mortgage Broker, as required by law,
+              with its main office located at 1415 Vantage Park Drive, Suite 700, Charlotte, NC 28203, Telephone Number
+              866-501-2397 (TDD/TTY). NMLS Unique Identifier #1136. LendingTree, LLC is known as LT Technologies in lieu
+              of true name LendingTree, LLC in NY. LendingTree technology and processes are patented under U.S. Patent
+              Nos. 6,385,594 and 6,611,816 and licensed under U.S. Patent Nos. 5,995,947 and 5,758,328. © 2016
+              LendingTree, LLC. All Rights Reserved. This site is directed at, and made available to, persons in the
+              continental U.S., Alaska and Hawaii only.
+            </p>
+          </div>
+
+          <div class="lg:col-span-1 xl:col-span-2 text-center md:text-left">
+            <p class="text-white">
+              <span class="font-bold">Online Security:</span>
+              <a href="#" class="hover:text-secondary-200">Protect Against Fraud</a>
+            </p>
+
+            <div class="inline-flex items-end mt-6 gap-6">
+              <a href="#">
+                <img src="./assets/img/icon-equal-housing.svg" width="40" height="28" alt="Equal Housing Opportunity" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-bbb.svg" width="35" height="53" alt="Better Business Bureau" />
+              </a>
+              <a href="#"> <img src="./assets/img/icon-comodo.svg" width="100" height="26" alt="Comodo Secure" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
