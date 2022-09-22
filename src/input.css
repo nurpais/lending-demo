@@ -766,3 +766,12 @@
 .helpful-links a {
   @apply leading-8;
 }
+
+/* CONTACT FORM */
+.topic {
+  @apply hidden space-y-6;
+}
+
+.topic a {
+  @apply text-secondary hover:text-secondary-200;
+}

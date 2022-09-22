@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="preload bg-gray-50">
+    <!-- Mobile navbar start -->
+    <div class="navbar-mobile">
+      <a href="#" class="inline-flex items-center justify-center w-14 h-14">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </a>
+      <a href="./index.html" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="company-name" />
+      </a>
+
+      <button type="button" class="navbar-mobile-burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <nav class="navbar-mobile-content">
+        <ul class="space-y-3 flex-1">
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-PersonalLoans inline-block text-xl mr-2" aria-hidden="true"></span> Loans
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-Mortgage inline-block text-xl mr-2" aria-hidden="true"></span> Mortgages
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-CreditCards inline-block text-xl mr-2" aria-hidden="true"></span> Credit Cards
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="h-px bg-white/20 my-10">&nbsp;</div>
+
+        <div class="px-5">
+          <p>Get your free credit score in minutes!</p>
+
+          <div class="mt-5 flex space-x-4">
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Login</a>
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Sing Up for Free</a>
+          </div>
+
+          <div class="mt-10 flex space-x-2 items-center">
+            <span class="icon-MobilePhone text-xl" aria-hidden="true"></span>
+            <p>Call Us <a href="tel:+18008134620" rel="nofollow" class="text-secondary">1-800-813-4620</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile navbar end -->
+
+    <!-- Desktop navbar start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="" />
+      </a>
+
+      <ul class="navbar-nav">
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Loans
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Mortgages
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Credit Cards
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="flex space-x-4 ml-auto">
+        <a class="hover:text-secondary-200 transition-colors" href="#">Sign up for Free</a>
+        <a class="hover:text-secondary-200 transition-colors" href="#">Log in</a>
+        <a class="hover:text-secondary-200 transition-colors" href="tel:+18008134620">1-800-813-4620</a>
+      </div>
+    </div>
+    <!-- Desktop navbar end -->
+
+    <main class="container pt-6 md:pt-12 pb-10 md:pb-20">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-8">
+          <div class="max-w-xl mx-auto">
+            <h1 class="heading-primary">Contact LendingTree</h1>
+
+            <div class="mt-6">
+              <p class="block text-lg font-bold text-dark-200">What can we help you with?</p>
+              <select
+                id="select-topic"
+                class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-secondary-200 focus:outline-none focus:ring-secondary-200 sm:text-sm h-12"
+              >
+                <option value="select-topic" class="hidden">Select a topic</option>
+                <option value="opt-phone-calls">Opt out of phone calls</option>
+                <option value="email-preferences">Update email preferences</option>
+                <option value="share-feedback">Share some feedback</option>
+                <option value="report-issue">Report an issue</option>
+                <option value="technical-assistance">Technical assistance</option>
+                <option value="affiliate-opportunities">Partnerships and Affiliate Program Opportunities</option>
+                <option value="other">Other</option>
+              </select>
+
+              <div class="mt-8 md:mt-10">
+                <div data-topic="opt-phone-calls" class="topic">
+                  <p>
+                    LendingTree honors your <a href="/legal/privacy-policy">privacy</a>. By providing your number below,
+                    you will be placed on our Company Do-Not-Call List.
+                    <strong
+                      >If you’d like a lender to place your phone number on their Do-Not-Call List, please contact them
+                      directly.</strong
+                    >
+                  </p>
+                  <p>
+                    Please note: If you resubmit a request through LendingTree, or provide your number to LendingTree in
+                    the future, it will remove this request and you will receive return calls at the phone number. At
+                    any time you may update your preferred method of contact by calling 1-888-272-1355.
+                  </p>
+
+                  <form action="#" class="space-y-3">
+                    <input
+                      type="text"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                      placeholder="First name"
+                    />
+                    <input
+                      type="text"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                      placeholder="Last name"
+                    />
+                    <input
+                      type="email"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                      placeholder="Email Address"
+                    />
+                    <input
+                      type="tel"
+                      class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                      placeholder="First name"
+                    />
+
+                    <button type="submit" class="btn !mt-8">Submit</button>
+                  </form>
+                </div>
+                <div data-topic="email-preferences" class="topic">
+                  <div class="rounded shadow-md p-6 bg-white">
+                    <p class="uppercase text-primary text-lg font-bold mb-2">SOLUTION:</p>
+                    <p>
+                      Use the button below to manage your email preferences, including subscribing or unsubscribing to
+                      various product alerts and marketing communications.
+                    </p>
+                    <a href="#" class="btn !text-white mt-5">Manage My Email Preferences</a>
+                  </div>
+                </div>
+                <div data-topic="share-feedback" class="topic">
+                  <form action="#" class="space-y-8">
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Which would you like to leave feedback about?</p>
+                      <div class="space-y-3">
+                        <div class="flex items-center">
+                          <input
+                            id="feedback-service"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                            checked
+                          />
+                          <label for="feedback-service" class="ml-2 block font-medium">
+                            An experience with LendingTree's service
+                          </label>
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            id="feedback-partners"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                          <label for="feedback-partners" class="ml-2 block font-medium">
+                            An experience with one of LendingTree's partners
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Your Contact Information</p>
+                      <p>
+                        If you are an existing LendingTree customer please provide the same contact information used in
+                        the experience you're leaving feedback about.
+                      </p>
+
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Last name"
+                      />
+                      <input
+                        type="email"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Email Address"
+                      />
+                      <input
+                        type="tel"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+
+                      <textarea
+                        rows="4"
+                        placeholder="Comment or Question"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm"
+                      ></textarea>
+
+                      <div class="relative flex items-start">
+                        <div class="flex h-5 items-center">
+                          <input
+                            id="Acknowledgement"
+                            name="comments"
+                            type="checkbox"
+                            class="h-4 w-4 rounded border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                        </div>
+                        <div class="ml-3 text-sm">
+                          <label for="Acknowledgement"
+                            >I acknowledge that I am at or over the age of eighteen and that I consent to the use of all
+                            or part of my feedback by LendingTree.
+                          </label>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn !mt-8">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <div data-topic="report-issue" class="topic">
+                  <form action="#" class="space-y-8">
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Which issue would you like to report?</p>
+                      <div class="space-y-3">
+                        <div class="flex items-center">
+                          <input
+                            id="issue-1"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                            checked
+                          />
+                          <label for="issue-1" class="ml-2 block font-medium"> An issue with LendingTree </label>
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            id="issue-2"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                          <label for="issue-2" class="ml-2 block font-medium"> An issue with a lender </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Your Contact Information</p>
+                      <p>
+                        If you are an existing LendingTree customer please provide the same contact information used in
+                        the experience you're leaving feedback about.
+                      </p>
+
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Last name"
+                      />
+                      <input
+                        type="email"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Email Address"
+                      />
+                      <input
+                        type="tel"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+
+                      <textarea
+                        rows="4"
+                        placeholder="Comment or Question"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm"
+                      ></textarea>
+
+                      <div class="relative flex items-start">
+                        <div class="flex h-5 items-center">
+                          <input
+                            id="Acknowledgement"
+                            name="comments"
+                            type="checkbox"
+                            class="h-4 w-4 rounded border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                        </div>
+                        <div class="ml-3 text-sm">
+                          <label for="Acknowledgement"
+                            >I acknowledge that I am at or over the age of eighteen and that I consent to the use of all
+                            or part of my feedback by LendingTree.
+                          </label>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn !mt-8">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <div data-topic="technical-assistance" class="topic">
+                  <form action="#" class="space-y-8">
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">
+                        Which of the following best describes your issue?
+                      </p>
+                      <div class="space-y-3">
+                        <div class="flex items-center">
+                          <input
+                            id="issue-sign"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                            checked
+                          />
+                          <label for="issue-sign" class="ml-2 block font-medium"> Unable to sign in </label>
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            id="issue-find"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                          <label for="issue-find" class="ml-2 block font-medium">
+                            Can't find what you're looking for
+                          </label>
+                        </div>
+                        <div class="flex items-center">
+                          <input
+                            id="issue-page"
+                            name="share-feedback"
+                            type="radio"
+                            class="h-4 w-4 border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                          <label for="issue-page" class="ml-2 block font-medium">
+                            A page on the website is too slow to load
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Your Contact Information</p>
+                      <p>
+                        If you are an existing LendingTree customer please provide the same contact information used in
+                        the experience you're leaving feedback about.
+                      </p>
+
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Last name"
+                      />
+                      <input
+                        type="email"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Email Address"
+                      />
+                      <input
+                        type="tel"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+
+                      <textarea
+                        rows="4"
+                        placeholder="Comment or Question"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm"
+                      ></textarea>
+
+                      <div class="relative flex items-start">
+                        <div class="flex h-5 items-center">
+                          <input
+                            id="Acknowledgement"
+                            name="comments"
+                            type="checkbox"
+                            class="h-4 w-4 rounded border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                        </div>
+                        <div class="ml-3 text-sm">
+                          <label for="Acknowledgement"
+                            >I acknowledge that I am at or over the age of eighteen and that I consent to the use of all
+                            or part of my feedback by LendingTree.
+                          </label>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn !mt-8">Submit</button>
+                    </div>
+                  </form>
+                </div>
+                <div data-topic="affiliate-opportunities" class="topic">
+                  <div class="rounded shadow-md p-6 bg-white">
+                    <p class="uppercase text-primary text-lg font-bold mb-2">SOLUTION:</p>
+                    <p>
+                      Thank you for your interest in LendingTree partnership and affiliate opportunities. To learn more,
+                      use the button below to access our Partner with Us page.
+                    </p>
+                    <a href="#" class="btn !text-white mt-5">Partner with Us</a>
+                  </div>
+                </div>
+                <div data-topic="other" class="topic">
+                  <form action="#" class="space-y-8">
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Let's get some details</p>
+
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Summarize what you're looking for"
+                      />
+
+                      <textarea
+                        rows="4"
+                        placeholder="Please explain your issue in full so we can get it to the right people"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm"
+                      ></textarea>
+                    </div>
+
+                    <div class="space-y-3">
+                      <p class="block text-lg font-bold text-dark-200">Your Contact Information</p>
+                      <p>
+                        If you are an existing LendingTree customer please provide the same contact information used in
+                        the experience you're leaving feedback about.
+                      </p>
+
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+                      <input
+                        type="text"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Last name"
+                      />
+                      <input
+                        type="email"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="Email Address"
+                      />
+                      <input
+                        type="tel"
+                        class="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary-200 focus:ring-secondary-200 sm:text-sm h-12"
+                        placeholder="First name"
+                      />
+
+                      <div class="relative flex items-start">
+                        <div class="flex h-5 items-center">
+                          <input
+                            id="Acknowledgement"
+                            name="comments"
+                            type="checkbox"
+                            class="h-4 w-4 rounded border-gray-300 text-secondary-200 focus:ring-secondary-200"
+                          />
+                        </div>
+                        <div class="ml-3 text-sm">
+                          <label for="Acknowledgement"
+                            >I acknowledge that I am at or over the age of eighteen and that I consent to the use of all
+                            or part of my feedback by LendingTree.
+                          </label>
+                        </div>
+                      </div>
+
+                      <button type="submit" class="btn !mt-8">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-4">
+          <div class="md:border-l border-gray-200 md:pl-8 -my-4">
+            <div class="border-b border-gray-200 py-4">
+              <h5 class="text-primary uppercase font-bold md:text-lg">Customer Care</h5>
+              <p class="my-6"><strong>800-813-4620 </strong></p>
+              <p class="my-4"><strong>Hours of Operation</strong></p>
+
+              <div class="my-3">
+                <p class="text-sm mb-1">Monday-Thursday</p>
+                <strong>8am - 9pm EST</strong>
+              </div>
+
+              <div class="my-3">
+                <p class="text-sm mb-1">Friday</p>
+                <strong>8am - 8pm EST</strong>
+              </div>
+
+              <div class="my-3">
+                <p class="text-sm mb-1">Saturday</p>
+                <strong>10am - 7pm EST</strong>
+              </div>
+
+              <div class="my-3">
+                <a href="#" class="underline hover:text-secondary">TDD/TTY</a>
+                <span>|</span>
+                <a href="#" class="underline hover:text-secondary">Unsubscribe from calls</a>
+              </div>
+              <div class="my-3">
+                <a href="#" class="underline hover:text-secondary">Frequently Asked Questions</a>
+              </div>
+              <p class="my-3">
+                <strong>Partnership and Affiliate Program Opportunities:</strong><br />
+                <a href="#" class="underline hover:text-secondary">Partner with Us</a>
+              </p>
+            </div>
+            <div class="border-b border-gray-200 py-4">
+              <p class="my-3">
+                <strong>Write Us</strong><br />
+                LendingTree, LLC<br />1415 Vantage Park Drive<br />Suite 700<br />Charlotte, NC 28203
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container space-y-12">
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">About LendingTree</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Legal Information</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Privacy</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Online Tracking</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Security</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">Other Sites</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">SnapCap</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">CompareCards</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">DepositAccounts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-full xl:col-span-2 flex flex-col md:flex-row xl:flex-col gap-10">
+            <div class="text-sm text-center md:text-left">
+              <p class="text-white">Follow Us</p>
+              <div class="footer-social mt-4">
+                <a href="#" class="footer-social-link hover:bg-[#FB0801] hover:border-[#FB0801]">
+                  <img src="./assets/img/icons/youtube.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#1D9BF0] hover:border-[#1D9BF0]">
+                  <img src="./assets/img/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#4867AA] hover:border-[#4867AA]">
+                  <img src="./assets/img/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#F41366] hover:border-[#F41366]">
+                  <img src="./assets/img/icons/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text-center md:text-left">
+              <p class="text-white">Download Our App</p>
+              <div class="inline-flex mt-4 space-x-2">
+                <a href="#">
+                  <img class="h-10" src="./assets/img/apple-app-store-badge.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img class="h-10" src="./assets/img/google-play-store-badge.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="lg:col-span-3">
+            <p class="text-gray-500">
+              LendingTree, LLC is a Marketing Lead Generator and is a Duly Licensed Mortgage Broker, as required by law,
+              with its main office located at 1415 Vantage Park Drive, Suite 700, Charlotte, NC 28203, Telephone Number
+              866-501-2397 (TDD/TTY). NMLS Unique Identifier #1136. LendingTree, LLC is known as LT Technologies in lieu
+              of true name LendingTree, LLC in NY. LendingTree technology and processes are patented under U.S. Patent
+              Nos. 6,385,594 and 6,611,816 and licensed under U.S. Patent Nos. 5,995,947 and 5,758,328. © 2016
+              LendingTree, LLC. All Rights Reserved. This site is directed at, and made available to, persons in the
+              continental U.S., Alaska and Hawaii only.
+            </p>
+          </div>
+
+          <div class="lg:col-span-1 xl:col-span-2 text-center md:text-left">
+            <p class="text-white">
+              <span class="font-bold">Online Security:</span>
+              <a href="#" class="hover:text-secondary-200">Protect Against Fraud</a>
+            </p>
+
+            <div class="inline-flex items-end mt-6 gap-6">
+              <a href="#">
+                <img src="./assets/img/icon-equal-housing.svg" width="40" height="28" alt="Equal Housing Opportunity" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-bbb.svg" width="35" height="53" alt="Better Business Bureau" />
+              </a>
+              <a href="#"> <img src="./assets/img/icon-comodo.svg" width="100" height="26" alt="Comodo Secure" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

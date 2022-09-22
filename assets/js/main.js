@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', () => {
   videoModal();
   tooltip();
   FAQaccordion();
+  contactForm();
   document.querySelector('body').classList.remove('preload');
 });
 
@@ -190,4 +191,13 @@ function FAQaccordion() {
       });
     });
   });
+}
+
+function contactForm() {
+  if (document.querySelector('#select-topic')) {
+    document.querySelector('#select-topic').addEventListener('change', function (e) {
+      document.querySelectorAll('.topic').forEach((topic) => (topic.style.display = 'none'));
+      document.querySelector(`[data-topic="${e.target.value}"]`).style.display = 'block';
+    });
+  }
 }
