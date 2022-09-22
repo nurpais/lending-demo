@@ -16,7 +16,7 @@
   }
 
   strong {
-    @apply font-bold;
+    @apply font-bold text-dark-200;
   }
 
   .preload * {
@@ -632,4 +632,107 @@
   .toc-list li a:hover:before {
     @apply opacity-100;
   }
+}
+
+/* BLOG PAGE */
+.news-heading {
+  @apply text-[22px] md:text-[27px] text-dark-200 relative;
+}
+
+.news-heading span {
+  @apply bg-white;
+}
+
+.news-heading::after {
+  content: '';
+  @apply h-px bg-gray-200 absolute left-0 w-full top-1/2  -z-10;
+}
+
+/* _featured blog */
+.featured-blog {
+  @apply flex items-center relative;
+}
+
+.featured-blog-img {
+  @apply w-[70px] h-[70px] object-cover md:w-[700px] md:h-[400px] flex-shrink-0;
+}
+
+.featured-blog-label {
+  @apply text-xs md:text-lg text-primary font-bold md:mb-2;
+}
+
+.featured-blog-heading {
+  @apply md:text-[40px] font-georgia text-dark-200 hover:text-primary !leading-snug md:mb-4 inline-block;
+}
+
+.featured-blog-text {
+  @apply hidden md:block text-[17px] mt-4 pt-4 relative;
+}
+
+.featured-blog-text::before {
+  content: '';
+  @apply absolute h-0.5 bg-primary top-0 w-64 left-0;
+}
+
+.featured-blog-details {
+  @apply text-[10px] md:text-[15px];
+}
+
+.featured-blog-content {
+  @apply pl-2.5 md:absolute bg-white md:w-[80%] md:p-8 right-0 top-[50px] lg:w-[55%] md:min-h-[400px];
+}
+
+.featured-blog-text a {
+  @apply text-secondary hover:text-secondary-200;
+}
+
+/* _featured blog */
+.blog-card {
+  @apply flex items-center md:items-start relative;
+}
+
+.blog-card-img {
+  @apply w-[70px] h-[70px] object-cover md:w-[250px] md:h-[250px] flex-shrink-0 xl:w-[300px];
+}
+
+.blog-card-label {
+  @apply text-xs md:text-lg text-primary font-bold md:mb-2;
+}
+
+.blog-card-heading {
+  @apply md:text-[27px] font-georgia text-dark-200 hover:text-primary !leading-snug md:mb-4 inline-block;
+}
+
+.blog-card-text {
+  @apply hidden md:block text-[17px] mt-4 pt-4 relative;
+}
+
+.blog-card-text::before {
+  content: '';
+  @apply absolute h-0.5 bg-primary top-0 w-64 left-0;
+}
+
+.blog-card-details {
+  @apply text-[10px] md:text-[15px];
+}
+
+.blog-card-content {
+  @apply pl-2.5 bg-white md:p-8 md:w-[70%] md:-ml-20 md:mt-4 lg:-ml-10;
+}
+
+.blog-card-text a {
+  @apply text-secondary hover:text-secondary-200;
+}
+
+/* PAGINATION */
+.pagination {
+  @apply flex;
+}
+
+.pagination a.active {
+  @apply text-dark-200 border-b-2 border-primary;
+}
+
+.pagination a {
+  @apply text-secondary hover:text-secondary-200 p-2;
 }

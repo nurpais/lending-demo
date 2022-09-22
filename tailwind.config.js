@@ -30,6 +30,7 @@ module.exports = {
     fontFamily: {
       sans: ['Lato', 'sans-serif'],
       hand: ['Caveat', 'cursive'],
+      georgia: ['Georgia', 'Times New Roman', 'serif'],
     },
     container: {
       center: true,

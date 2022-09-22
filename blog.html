@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="preload">
+    <!-- Mobile navbar start -->
+    <div class="navbar-mobile">
+      <a href="#" class="inline-flex items-center justify-center w-14 h-14">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+          />
+        </svg>
+      </a>
+      <a href="./index.html" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="company-name" />
+      </a>
+
+      <button type="button" class="navbar-mobile-burger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+
+      <nav class="navbar-mobile-content">
+        <ul class="space-y-3 flex-1">
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-PersonalLoans inline-block text-xl mr-2" aria-hidden="true"></span> Loans
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-Mortgage inline-block text-xl mr-2" aria-hidden="true"></span> Mortgages
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+          <li>
+            <button class="navbar-mobile-dropdown">
+              <span class="icon-CreditCards inline-block text-xl mr-2" aria-hidden="true"></span> Credit Cards
+              <span class="navbar-mobile-chevron icon-ChevronDown"></span>
+            </button>
+            <ul class="navbar-mobile-sub">
+              <li><a href="#" class="navbar-mobile-link">Personal Loans</a></li>
+              <li><a href="#" class="navbar-mobile-link">Debt Consolidation</a></li>
+              <li><a href="#" class="navbar-mobile-link">Business Loans</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="h-px bg-white/20 my-10">&nbsp;</div>
+
+        <div class="px-5">
+          <p>Get your free credit score in minutes!</p>
+
+          <div class="mt-5 flex space-x-4">
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Login</a>
+            <a class="text-secondary border border-secondary rounded px-3 py-2" href="#">Sing Up for Free</a>
+          </div>
+
+          <div class="mt-10 flex space-x-2 items-center">
+            <span class="icon-MobilePhone text-xl" aria-hidden="true"></span>
+            <p>Call Us <a href="tel:+18008134620" rel="nofollow" class="text-secondary">1-800-813-4620</a></p>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Mobile navbar end -->
+
+    <!-- Desktop navbar start -->
+    <div class="navbar">
+      <a href="#" class="navbar-logo">
+        <img src="./assets/img/logo.svg" alt="" />
+      </a>
+
+      <ul class="navbar-nav">
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Loans
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Mortgages
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="relative h-full flex items-center">
+          <button class="navbar-dropdown">
+            Credit Cards
+            <span class="navbar-chevron icon-ChevronDown"></span>
+          </button>
+          <ul class="navbar-sub">
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-PersonalLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Personal Loans
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-Consolidate text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Debt Consolidate
+              </a>
+            </li>
+            <li>
+              <a href="#" class="navbar-link">
+                <div class="w-10 h-10 inline-flex items-center justify-center">
+                  <span class="icon-BusinessLoans text-primary-200" aria-hidden="true"></span>
+                </div>
+
+                Business Loans
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="flex space-x-4 ml-auto">
+        <a class="hover:text-secondary-200 transition-colors" href="#">Sign up for Free</a>
+        <a class="hover:text-secondary-200 transition-colors" href="#">Log in</a>
+        <a class="hover:text-secondary-200 transition-colors" href="tel:+18008134620">1-800-813-4620</a>
+      </div>
+    </div>
+    <!-- Desktop navbar end -->
+
+    <main class="container py-10 md:py-20 lg:pt-32">
+      <h1 class="news-heading"><span>Latest News</span></h1>
+
+      <div class="mt-8 featured-blog">
+        <img class="featured-blog-img" src="./assets/img/featured-blog.jpeg" alt="" />
+        <div class="featured-blog-content">
+          <p class="featured-blog-label">LATEST NEWS</p>
+          <a href="#" class="featured-blog-heading">What It’s Like to Work in the New LendingTree Headquarters</a>
+
+          <p class="featured-blog-details">By <strong>Emily Gunn</strong> on November 9, 2021</p>
+          <p class="featured-blog-text">
+            Picture the scene: you start your day with a double espresso, chatting with coworkers and catching up on
+            emails at your hybrid sitting-standing desk. Afterward,...
+            <a href="#">read more</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-6 md:mt-20">
+        <div class="grid lg:grid-cols-12 gap-8">
+          <div class="lg:col-span-9">
+            <div class="space-y-6 md:space-y-12">
+              <div class="blog-card">
+                <img class="blog-card-img" src="./assets/img/featured-blog.jpeg" alt="" />
+                <div class="blog-card-content">
+                  <p class="blog-card-label">LATEST NEWS</p>
+                  <a href="#" class="blog-card-heading">What It’s Like to Work in the New LendingTree Headquarters</a>
+
+                  <p class="blog-card-details">By <strong>Emily Gunn</strong> on November 9, 2021</p>
+                  <p class="blog-card-text">
+                    Picture the scene: you start your day with a double espresso, chatting with coworkers and catching
+                    up on emails at your hybrid sitting-standing desk. Afterward,...
+                    <a href="#">read more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <img class="blog-card-img" src="./assets/img/featured-blog.jpeg" alt="" />
+                <div class="blog-card-content">
+                  <p class="blog-card-label">LATEST NEWS</p>
+                  <a href="#" class="blog-card-heading">What It’s Like to Work in the New LendingTree Headquarters</a>
+
+                  <p class="blog-card-details">By <strong>Emily Gunn</strong> on November 9, 2021</p>
+                  <p class="blog-card-text">
+                    Picture the scene: you start your day with a double espresso, chatting with coworkers and catching
+                    up on emails at your hybrid sitting-standing desk. Afterward,...
+                    <a href="#">read more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <img class="blog-card-img" src="./assets/img/featured-blog.jpeg" alt="" />
+                <div class="blog-card-content">
+                  <p class="blog-card-label">LATEST NEWS</p>
+                  <a href="#" class="blog-card-heading">What It’s Like to Work in the New LendingTree Headquarters</a>
+
+                  <p class="blog-card-details">By <strong>Emily Gunn</strong> on November 9, 2021</p>
+                  <p class="blog-card-text">
+                    Picture the scene: you start your day with a double espresso, chatting with coworkers and catching
+                    up on emails at your hybrid sitting-standing desk. Afterward,...
+                    <a href="#">read more</a>
+                  </p>
+                </div>
+              </div>
+              <div class="blog-card">
+                <img class="blog-card-img" src="./assets/img/featured-blog.jpeg" alt="" />
+                <div class="blog-card-content">
+                  <p class="blog-card-label">LATEST NEWS</p>
+                  <a href="#" class="blog-card-heading">What It’s Like to Work in the New LendingTree Headquarters</a>
+
+                  <p class="blog-card-details">By <strong>Emily Gunn</strong> on November 9, 2021</p>
+                  <p class="blog-card-text">
+                    Picture the scene: you start your day with a double espresso, chatting with coworkers and catching
+                    up on emails at your hybrid sitting-standing desk. Afterward,...
+                    <a href="#">read more</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-16 md:mt-20 pt-6 md:pt-10 border-t border-gray-200 flex">
+              <p class="mr-8">Page 1 of 19</p>
+
+              <ul class="pagination">
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li>...</li>
+                <li><a href="#">19</a></li>
+                <li><a href="#">Next</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="lg:col-span-3 hidden lg:block">
+            <h3 class="border-b-2 border-dark-200">
+              <span class="icon-graphup text-2xl text-primary" aria-hidden="true"></span>
+              <span class="uppercase font-bold text-dark-200">TRENDING ARTICLES</span>
+            </h3>
+
+            <div class="mt-6 space-y-10">
+              <figure>
+                <img src="./assets/img/trending-articles.jpeg" alt="" />
+
+                <figcaption class="mt-4">
+                  <a href="#" class="text-dark-200 font-bold">
+                    Coding and giving and beer, oh my! A wrap-up of LendaHand Week
+                  </a>
+                  <p class="text-xs mt-1">
+                    By <a href="#"><strong>April Whitlock</strong></a> on November 22, 2021
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img src="./assets/img/trending-articles.jpeg" alt="" />
+
+                <figcaption class="mt-4">
+                  <a href="#" class="text-dark-200 font-bold">
+                    Coding and giving and beer, oh my! A wrap-up of LendaHand Week
+                  </a>
+                  <p class="text-xs mt-1">
+                    By <a href="#"><strong>April Whitlock</strong></a> on November 22, 2021
+                  </p>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img src="./assets/img/trending-articles.jpeg" alt="" />
+
+                <figcaption class="mt-4">
+                  <a href="#" class="text-dark-200 font-bold">
+                    Coding and giving and beer, oh my! A wrap-up of LendaHand Week
+                  </a>
+                  <p class="text-xs mt-1">
+                    By <a href="#"><strong>April Whitlock</strong></a> on November 22, 2021
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container space-y-12">
+        <div class="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">About LendingTree</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">About us</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Legal Information</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Overview</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Privacy</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Online Tracking</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Security</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Careers</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">Investors</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <p class="text-white">Other Sites</p>
+            <ul class="space-y-2">
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">SnapCap</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">CompareCards</a>
+              </li>
+              <li>
+                <a class="text-secondary-200 hover:text-white" href="#">DepositAccounts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-full xl:col-span-2 flex flex-col md:flex-row xl:flex-col gap-10">
+            <div class="text-sm text-center md:text-left">
+              <p class="text-white">Follow Us</p>
+              <div class="footer-social mt-4">
+                <a href="#" class="footer-social-link hover:bg-[#FB0801] hover:border-[#FB0801]">
+                  <img src="./assets/img/icons/youtube.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#1D9BF0] hover:border-[#1D9BF0]">
+                  <img src="./assets/img/icons/twitter.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#4867AA] hover:border-[#4867AA]">
+                  <img src="./assets/img/icons/facebook.svg" alt="" />
+                </a>
+                <a href="#" class="footer-social-link hover:bg-[#F41366] hover:border-[#F41366]">
+                  <img src="./assets/img/icons/instagram.svg" alt="" />
+                </a>
+              </div>
+            </div>
+
+            <div class="text-center md:text-left">
+              <p class="text-white">Download Our App</p>
+              <div class="inline-flex mt-4 space-x-2">
+                <a href="#">
+                  <img class="h-10" src="./assets/img/apple-app-store-badge.svg" alt="" />
+                </a>
+                <a href="#">
+                  <img class="h-10" src="./assets/img/google-play-store-badge.svg" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-4 xl:grid-cols-5 gap-10 xl:gap-16">
+          <div class="lg:col-span-3">
+            <p class="text-gray-500">
+              LendingTree, LLC is a Marketing Lead Generator and is a Duly Licensed Mortgage Broker, as required by law,
+              with its main office located at 1415 Vantage Park Drive, Suite 700, Charlotte, NC 28203, Telephone Number
+              866-501-2397 (TDD/TTY). NMLS Unique Identifier #1136. LendingTree, LLC is known as LT Technologies in lieu
+              of true name LendingTree, LLC in NY. LendingTree technology and processes are patented under U.S. Patent
+              Nos. 6,385,594 and 6,611,816 and licensed under U.S. Patent Nos. 5,995,947 and 5,758,328. © 2016
+              LendingTree, LLC. All Rights Reserved. This site is directed at, and made available to, persons in the
+              continental U.S., Alaska and Hawaii only.
+            </p>
+          </div>
+
+          <div class="lg:col-span-1 xl:col-span-2 text-center md:text-left">
+            <p class="text-white">
+              <span class="font-bold">Online Security:</span>
+              <a href="#" class="hover:text-secondary-200">Protect Against Fraud</a>
+            </p>
+
+            <div class="inline-flex items-end mt-6 gap-6">
+              <a href="#">
+                <img src="./assets/img/icon-equal-housing.svg" width="40" height="28" alt="Equal Housing Opportunity" />
+              </a>
+              <a href="#">
+                <img src="./assets/img/icon-bbb.svg" width="35" height="53" alt="Better Business Bureau" />
+              </a>
+              <a href="#"> <img src="./assets/img/icon-comodo.svg" width="100" height="26" alt="Comodo Secure" /> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
