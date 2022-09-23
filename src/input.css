@@ -775,3 +775,60 @@
 .topic a {
   @apply text-secondary hover:text-secondary-200;
 }
+
+/* FORM */
+.form {
+  @apply max-w-2xl mx-auto;
+}
+
+/* .form-content {
+  @apply hidden;
+}
+
+.form-content.active {
+  @apply block;
+} */
+
+.form-heading {
+  @apply text-[27px] md:text-[40px] text-white;
+}
+
+.form-error {
+  @apply text-center text-sm text-red-500;
+}
+
+.form-select {
+  @apply block w-full rounded-md border-none py-2 pl-3 pr-10 text-base focus:border-transparent focus:outline-none focus:ring-0 h-[50px] bg-form-input-bg text-white relative;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+}
+
+.form-input {
+  @apply block w-full rounded-md border-none  focus:border-transparent focus:ring-0 sm:text-sm h-[50px] bg-form-input-bg text-white placeholder:text-neutral-400 placeholder:italic;
+}
+
+[x-cloak] {
+  display: none !important;
+}
+
+.form-radio:checked + label {
+  @apply bg-primary;
+}
+
+.form-radio-label {
+  @apply flex items-center px-5 w-full rounded-full border-none  h-[50px] bg-form-input-bg text-white cursor-pointer will-change-auto !transition-all;
+}
+
+.form-radio-label:hover {
+  @apply scale-105;
+}
+
+/* .form-range {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 3px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+} */

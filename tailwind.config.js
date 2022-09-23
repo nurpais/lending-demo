@@ -25,6 +25,7 @@ module.exports = {
           DEFAULT: '#ff704d',
           200: '#ff471a',
         },
+        'form-input-bg': '#27405B',
       },
     },
     fontFamily: {

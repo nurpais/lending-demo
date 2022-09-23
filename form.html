@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LendingTree</title>
+    <link rel="stylesheet" href="./assets/css/icon-font.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="preload bg-dark-200">
+    <div class="max-w-4xl px-4 mx-auto py-3" x-data="App">
+      <div class="grid grid-cols-3 items-center">
+        <div>
+          <button
+            @click="step--"
+            type="button"
+            class="text-white"
+            x-show="step !== 1 && step !== 9"
+            x-cloak
+          >
+            back
+          </button>
+        </div>
+        <div class="flex justify-center">
+          <a href="#">
+            <img class="h-14" src="./assets/img/logo.svg" alt="" />
+          </a>
+        </div>
+        <div>
+          <p class="text-neutral-400 text-right">
+            <span class="hidden md:inline">Call us</span>
+            <span class="text-xl hidden md:inline">888-246-4181</span>
+            <br class="hidden md:inline" />
+            <a class="text-xs" href="#">Disclosures</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <form action="#" class="form">
+          <div class="form-content form-content-1" x-show="step == 1" x-cloak>
+            <h2 class="form-heading text-center">Select a loan purpose</h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <select
+                  name="loan-purpose"
+                  class="form-select"
+                  x-ref="loanPurpose"
+                  x-model="body.loanPurpose"
+                  @input="validate"
+                >
+                  <option value="">Select a loan purpose</option>
+                  <option value="DEBTCONSOLIDATION">Debt Consolidation</option>
+                  <option value="CCREFI">Pay Off Credit Cards</option>
+                  <option value="HOMEIMP">Home Improvement</option>
+                  <option value="HOMEBUYING">Home Buying</option>
+                  <option value="MAJORPURCHASE">Major Purchase</option>
+                  <option value="CARFINANCING">Car Financing</option>
+                  <option value="BUSINESS">Business</option>
+                  <option value="VACATION">Vacation</option>
+                  <option value="WEDDING">Wedding Expenses</option>
+                  <option value="MOVING">Moving and Relocation</option>
+                  <option value="MEDICAL">Medical Expenses</option>
+                  <option value="CARREPAIR">Car Repair</option>
+                  <option value="EVERYDAYBILLS">Everyday Bills</option>
+                  <option value="OTHER">Other</option>
+                </select>
+                <p class="mt-1 form-error hidden">
+                  Please select a loan purpose
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn form-btn w-full !mt-6"
+                @click="next({loanPurpose: $refs.loanPurpose}, 2)"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 2" x-cloak>
+            <h2 class="form-heading text-center">
+              How much would you like to borrow?
+            </h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <input
+                type="range"
+                class="form-range"
+                min="1000"
+                max="50000"
+                step="500"
+                value="15000"
+                x-model="body.range"
+              />
+
+              <button
+                type="button"
+                class="btn form-btn w-full mt-6"
+                @click="next(true, 3)"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 3" x-cloak>
+            <h2 class="form-heading text-center">
+              How quickly do you need the money?
+            </h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <input
+                  type="radio"
+                  name="quickly"
+                  value="48hrs"
+                  class="sr-only form-radio"
+                  x-model="body.quickly"
+                  id="radio-48hrs"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-48hrs"
+                  @click="next(true, 4)"
+                >
+                  Within 48 hours
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="quickly"
+                  value="2weeks"
+                  class="sr-only form-radio"
+                  x-model="body.quickly"
+                  id="radio-2weeks"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-2weeks"
+                  @click="next(true, 4)"
+                >
+                  Within 2 weeks
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="quickly"
+                  value="month"
+                  class="sr-only form-radio"
+                  x-model="body.quickly"
+                  id="radio-month"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-month"
+                  @click="next(true, 4)"
+                >
+                  Within a month
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="quickly"
+                  value="unsure"
+                  class="sr-only form-radio"
+                  x-model="body.quickly"
+                  id="radio-unsure"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-unsure"
+                  @click="next(true, 4)"
+                >
+                  Unsure
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 4" x-cloak>
+            <h2 class="form-heading text-center">
+              What's your employment status?
+            </h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <input
+                  type="radio"
+                  name="status"
+                  value="fullTime"
+                  class="sr-only form-radio"
+                  x-model="body.status"
+                  id="radio-fullTime"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-fullTime"
+                  @click="next(true, 5)"
+                >
+                  Full Time
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="status"
+                  value="partTime"
+                  class="sr-only form-radio"
+                  x-model="body.status"
+                  id="radio-partTime"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-partTime"
+                  @click="next(true, 5)"
+                >
+                  Part Time
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="status"
+                  value="selfEmployed"
+                  class="sr-only form-radio"
+                  x-model="body.status"
+                  id="radio-selfEmployed"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-selfEmployed"
+                  @click="next(true, 5)"
+                >
+                  Self-Employed
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="status"
+                  value="unemployed"
+                  class="sr-only form-radio"
+                  x-model="body.status"
+                  id="radio-unemployed"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-unemployed"
+                  @click="next(true, 5)"
+                >
+                  Unemployed
+                </label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  name="status"
+                  value="other"
+                  class="sr-only form-radio"
+                  x-model="body.status"
+                  id="radio-other"
+                />
+                <label
+                  class="form-radio-label"
+                  for="radio-other"
+                  @click="next(true, 5)"
+                >
+                  Other
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 5" x-cloak>
+            <h2 class="form-heading text-center">
+              What's your yearly pre-tax income?
+            </h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <input
+                  type="text"
+                  class="form-input"
+                  x-ref="tax"
+                  @input="validate"
+                  x-model="body.tax"
+                />
+                <p class="mt-1 form-error hidden">Please enter an income.</p>
+                <p class="text-xs text-neutral-400 text-center mt-2">
+                  You may include bonus, commissions, part-time earnings, social
+                  security, retirement, disability, alimony and child support.
+                  Alimony, child support or separate maintenance income need not
+                  be revealed if you do not want to have it considered as a
+                  basis for repaying a loan.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn form-btn w-full !mt-6"
+                @click="next({tax: $refs.tax}, 6)"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 6" x-cloak>
+            <h2 class="form-heading text-center">Your name?</h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="First name"
+                  x-ref="name"
+                  @input="validate"
+                  x-model="body.name"
+                />
+                <p class="mt-1 form-error hidden">
+                  Please enter your full first name.
+                </p>
+              </div>
+
+              <div>
+                <input
+                  type="text"
+                  class="form-input"
+                  placeholder="Last name"
+                  x-ref="last"
+                  @input="validate"
+                  x-model="body.lastName"
+                />
+                <p class="mt-1 form-error hidden">
+                  Please enter your full last name.
+                </p>
+              </div>
+
+              <button
+                type="button"
+                class="btn form-btn w-full !mt-6"
+                @click="next({name: $refs.name, last: $refs.last}, 7)"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 7" x-cloak>
+            <h2 class="form-heading text-center">Phone number?</h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <input
+                  type="tel"
+                  class="form-input"
+                  x-ref="tel"
+                  @input="validate"
+                  x-model="body.phone"
+                />
+                <p class="mt-1 form-error hidden">
+                  Please enter a valid phone number.
+                </p>
+                <p class="text-xs text-neutral-400 text-center mt-2">
+                  Providing your number is consent to receive calls, texts, and
+                  recorded messages from LendingTree and its network partners
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn form-btn w-full !mt-6"
+                @click="next({tel: $refs.tel}, 8)"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== -->
+          <div class="form-content form-content-2" x-show="step == 8" x-cloak>
+            <h2 class="form-heading text-center">Email address?</h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <div>
+                <input
+                  type="text"
+                  class="form-input"
+                  x-ref="email"
+                  @input="validate"
+                  x-model="body.email"
+                  placeholder="you@example.com"
+                />
+                <p class="mt-1 form-error hidden">
+                  Please enter a valid email.
+                </p>
+                <p class="text-xs text-neutral-400 text-center mt-2">
+                  We take your privacy seriously.
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn form-btn w-full !mt-6"
+                @click="nextFinish({email: $refs.email}, 9)"
+              >
+                Continue
+              </button>
+            </div>
+          </div>
+
+          <div class="form-content form-content-2" x-show="step == 9" x-cloak>
+            <h2 class="form-heading text-center">Thank you!</h2>
+
+            <div class="max-w-xs mx-auto mt-6 space-y-3">
+              <a
+                href="./index.html"
+                type="button"
+                class="btn form-btn w-full mt-6"
+              >
+                Home
+              </a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./assets/js/form.js"></script>
+  </body>
+</html>
