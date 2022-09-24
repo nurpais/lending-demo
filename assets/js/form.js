@@ -44,15 +44,24 @@ const validInputs = (inputs) => {
 document.addEventListener('alpine:init', () => {
   Alpine.data('App', () => ({
     step: 1,
+    steps: 0,
     body: {
       email: '',
       loanPurpose: '',
-      range: '',
+      range: '25000'.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ','),
       name: '',
       email: '',
       phone: '',
       quickly: '',
       status: '',
+    },
+    init() {
+      this.steps = document.querySelectorAll('.form-content').length;
+      this.updateProgress();
+    },
+    updateProgress() {
+      document.querySelector('.progress').style.width =
+        ((this.step / this.steps) * 100).toFixed(2) + '%';
     },
     next(elements, step) {
       for (const i in elements) {
@@ -64,6 +73,7 @@ document.addEventListener('alpine:init', () => {
       }
 
       if (validInputs(elements)) this.step = step;
+      this.updateProgress();
     },
     nextFinish(elements, step) {
       for (const i in elements) {
@@ -76,8 +86,8 @@ document.addEventListener('alpine:init', () => {
 
       if (validInputs(elements)) {
         this.step = step;
-        console.log(this.body);
       }
+      this.updateProgress();
     },
     validate(e) {
       if (e.target.value !== '') {
@@ -85,6 +95,22 @@ document.addEventListener('alpine:init', () => {
       } else {
         e.target.nextElementSibling.classList.remove('hidden');
       }
+    },
+    handleRange(e) {
+      let target = e.target;
+      if (e.target.type !== 'range') {
+        target = document.getElementById('range');
+      }
+      const min = target.min;
+      const max = target.max;
+      const val = target.value;
+
+      document.querySelector('#total-sum').innerHTML = val
+        .toString()
+        .replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+
+      target.style.backgroundSize =
+        ((val - min) * 100) / (max - min) + '% 100%';
     },
   }));
 });

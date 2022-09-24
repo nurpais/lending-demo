@@ -822,13 +822,71 @@
   @apply scale-105;
 }
 
-/* .form-range {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 3px;
-  background: transparent;
-  border: none;
-  box-shadow: none;
+.form-range {
   -webkit-appearance: none;
-} */
+  width: 100%;
+  height: 4px;
+  border-radius: 5px;
+  background-image: linear-gradient(#00aeef, #00aeef);
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  @apply bg-gray-200;
+}
+
+/* Input Thumb */
+.form-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  @apply bg-secondary border-4 border-solid border-secondary-200 rounded-full;
+}
+
+.form-range::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  @apply bg-secondary border-4 border-solid border-secondary-200 rounded-full;
+}
+
+.form-range::-ms-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 24px;
+  cursor: ew-resize;
+  box-shadow: 0 0 2px 0 #555;
+  @apply bg-secondary border-4 border-solid border-secondary-200 rounded-full;
+}
+
+/* Input Track */
+.form-range::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.form-range::-moz-range-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.form-range::-ms-track {
+  -webkit-appearance: none;
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+.form-progress {
+  @apply bg-gray-200 w-full h-1.5 rounded-full max-w-sm mx-auto relative;
+}
+
+.form-progress .progress {
+  @apply absolute bg-primary rounded-full left-0 top-0 w-0 h-full;
+}

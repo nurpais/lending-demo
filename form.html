@@ -19,7 +19,20 @@
             x-show="step !== 1 && step !== 9"
             x-cloak
           >
-            back
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
           </button>
         </div>
         <div class="flex justify-center">
@@ -37,8 +50,14 @@
         </div>
       </div>
 
-      <div class="mt-10">
+      <div class="mt-12">
         <form action="#" class="form">
+          <div class="form-progress mb-8">
+            <div class="progress"></div>
+          </div>
+          <h2 class="text-primary font-bold text-lg text-center mb-6">
+            PERSONAL LOAN
+          </h2>
           <div class="form-content form-content-1" x-show="step == 1" x-cloak>
             <h2 class="form-heading text-center">Select a loan purpose</h2>
 
@@ -89,19 +108,36 @@
             </h2>
 
             <div class="max-w-xs mx-auto mt-6 space-y-3">
-              <input
-                type="range"
-                class="form-range"
-                min="1000"
-                max="50000"
-                step="500"
-                value="15000"
-                x-model="body.range"
-              />
+              <div>
+                <div
+                  class="text-secondary text-2xl md:text-[40px] text-center mb-4"
+                >
+                  $<span id="total-sum" x-text="body.range"></span>
+                </div>
+                <input
+                  type="range"
+                  class="form-range"
+                  min="1000"
+                  max="50000"
+                  step="500"
+                  value="25000"
+                  x-model="body.range"
+                  @input="handleRange"
+                />
+                <div class="flex justify-between mt-3">
+                  <span class="text-secondary">$1K</span>
+                  <span class="text-secondary">$50K</span>
+                </div>
+                <div class="mt-2 text-center">
+                  <span class="text-neutral-400 text-xs">
+                    ($1,000 min to $50,000 max)
+                  </span>
+                </div>
+              </div>
 
               <button
                 type="button"
-                class="btn form-btn w-full mt-6"
+                class="btn form-btn w-full !mt-6"
                 @click="next(true, 3)"
               >
                 Continue
@@ -443,6 +479,61 @@
             </div>
           </div>
         </form>
+      </div>
+
+      <div class="mt-14 pt-5 pb-8 border-t border-gray-200">
+        <p class="text-neutral-400 text-center">
+          Call us
+          <a href="#" class="text-secondary hover:text-secondary-200">
+            888-246-4181
+          </a>
+        </p>
+
+        <p
+          class="flex items-center text-xs mt-4 text-white gap-2 flex-wrap justify-center"
+        >
+          <a href="#" class="text-secondary hover:text-secondary-200">
+            Privacy Policy
+          </a>
+          |
+          <a href="#" class="text-secondary hover:text-secondary-200">
+            Terms of Use
+          </a>
+          |
+          <a href="#" class="text-secondary hover:text-secondary-200">
+            Licenses &amp; Disclosure
+          </a>
+          |
+          <a href="#" class="text-secondary hover:text-secondary-200">
+            Accessibility Statement
+          </a>
+        </p>
+
+        <div class="mt-4">
+          <p class="text-xs text-neutral-400 text-center">
+            <span id="footerDisclosure"
+              >LendingTree, LLC is a Marketing Lead Generator and is a Duly
+              Licensed Mortgage Broker, as required by law, with its main office
+              located at 1415 Vantage Park Drive, Suite 700, Charlotte, NC
+              28203, Telephone Number 866-501-2397
+              <a href="#" class="text-secondary hover:text-secondary-200"
+                >(TDD/TTY)</a
+              >.
+              <a href="#" class="text-secondary hover:text-secondary-200"
+                >NMLS Unique Identifier #1136</a
+              >. LendingTree, LLC is known as LT Technologies in lieu of true
+              name LendingTree, LLC in NY. LendingTree technology and processes
+              are patented under U.S. Patent Nos. 6,385,594 and 6,611,816 and
+              licensed under U.S. Patent Nos. 5,995,947 and 5,758,328. ©
+              <script type="text/javascript">
+                document.write(new Date().getFullYear());
+              </script>
+              2022 LendingTree, LLC. All Rights Reserved. This site is directed
+              at, and made available to, persons in the continental U.S., Alaska
+              and Hawaii only.
+            </span>
+          </p>
+        </div>
       </div>
     </div>
 
