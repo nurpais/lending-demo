@@ -86,6 +86,7 @@ document.addEventListener('alpine:init', () => {
 
       if (validInputs(elements)) {
         this.step = step;
+        console.log(this.body);
       }
       this.updateProgress();
     },
