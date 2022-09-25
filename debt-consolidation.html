@@ -788,7 +788,7 @@
 
               <div class="bg-white rounded shadow p-5">
                 <p><strong role="heading">In this guide:</strong></p>
-                <ul class="list-disc list-inside">
+                <ul class="list-disc pl-5 space-y-1">
                   <li>
                     <a
                       class="text-secondary hover:text-secondary-200"
@@ -845,8 +845,118 @@
       </section>
 
       <!-- Section calculator start -->
-      <section class="section container">
-        <h2 class="heading-primary">Debt Consolidation Calculator</h2>
+      <section class="section bg-white">
+        <div class="container">
+          <h2 class="heading-primary">Debt Consolidation Calculator</h2>
+
+          <div class="mt-14">
+            <div class="grid md:grid-cols-12 gap-6 md:gap-8" x-data="CalcApp">
+              <div class="md:col-span-4">
+                <div class="bg-zinc-100 rounded p-4 md:p-6 space-y-4">
+                  <div>
+                    <label for="amount" class="block text-sm text-dark-200">
+                      Loan Amount:
+                    </label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                      <span
+                        class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500 sm:text-sm"
+                      >
+                        $
+                      </span>
+                      <input
+                        type="text"
+                        id="amount"
+                        class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 focus:border-secondary focus:ring-secondary sm:text-sm h-12"
+                        :value="amount"
+                        x-model="amount"
+                        @input="calc"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="interest" class="block text-sm text-dark-200">
+                      Monthly Interest
+                    </label>
+                    <div class="mt-1 flex rounded-md shadow-sm">
+                      <span
+                        class="inline-flex items-center rounded-l-md border border-r-0 border-gray-300 bg-gray-50 px-3 text-gray-500 sm:text-sm"
+                      >
+                        %
+                      </span>
+                      <input
+                        type="text"
+                        id="interest"
+                        class="block w-full min-w-0 flex-1 rounded-none rounded-r-md border-gray-300 focus:border-secondary focus:ring-secondary sm:text-sm h-12"
+                        :value="interest"
+                        x-model="interest"
+                        @input="calc"
+                      />
+                    </div>
+                  </div>
+
+                  <div>
+                    <label for="tenure" class="block text-sm text-dark-200">
+                      Loan Tenure
+                    </label>
+                    <select
+                      id="tenure"
+                      class="mt-1 block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-secondary focus:outline-none focus:ring-secondary sm:text-sm h-12"
+                      x-model="months"
+                      @change="calc"
+                    >
+                      <option value="3">3 Months</option>
+                      <option value="6">6 Months</option>
+                      <option value="9">9 Months</option>
+                      <option value="12">12 Months</option>
+                      <option value="15">15 Months</option>
+                      <option value="18">18 Months</option>
+                      <option value="21">21 Months</option>
+                      <option value="24">24 Months</option>
+                      <option value="27">27 Months</option>
+                      <option value="30">30 Months</option>
+                      <option value="33">33 Months</option>
+                      <option value="36">36 Months</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="md:col-span-8">
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <p>Monthly Payment</p>
+                    <p class="text-xl font-semibold">
+                      $
+                      <span x-text="emiCalc"></span>
+                    </p>
+                  </div>
+                  <div class="flex justify-between items-center">
+                    <p>Total Interest</p>
+                    <p class="text-xl font-semibold text-primary">
+                      $
+                      <span x-text="tInt"></span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="my-10 h-px bg-gray-200"></div>
+
+                <div class="space-y-4">
+                  <div class="flex justify-between items-center">
+                    <p class="font-semibold text-dark-200">Total Payment</p>
+                    <p class="text-4xl font-semibold text-primary">
+                      $
+                      <span x-text="tPay"></span>
+                    </p>
+                  </div>
+
+                  <div class="flex justify-center">
+                    <a href="form.html" class="btn">Find Your Best Terms</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- Section calculator end -->
 
@@ -1594,6 +1704,8 @@
       </div>
     </footer>
 
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <script src="./assets/js/calculator.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
