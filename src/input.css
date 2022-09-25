@@ -618,7 +618,7 @@
 /* toc-list */
 @layer components {
   .toc-list {
-    @apply space-y-1 !list-none;
+    @apply !space-y-0 !list-none !p-0;
   }
   .toc-list li a {
     @apply py-2 inline-block text-secondary relative text-lg md:pl-4;
